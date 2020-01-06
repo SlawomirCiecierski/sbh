@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tlo"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.ciekawostki.CiekawostkiFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+        <!--        1-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            android:text="@string/ciekawostka_1"
+            android:textSize="16sp" />
+<!--        2-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            android:text="@string/ciekawostka_2"
+            android:textSize="16sp" />
+        <!--3-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            android:text="@string/ciekawostka_3"
+            android:textSize="16sp" />
+
+
+        <!--        4-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            android:text="@string/ciekawostka_4"
+            android:textSize="16sp" />
+
+        <!--        4a-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            android:text="@string/ciekawostka_4a"
+            android:textSize="16sp" />
+
+        <!--        4b-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            android:text="@string/ciekawostka_4b"
+            android:textSize="16sp" />
+
+
+        <!--5-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            android:text="@string/ciekawostka_5"
+            android:textSize="16sp" />
+
+<!--6-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            android:text="@string/ciekawostka_6"
+            android:textSize="16sp" />
+<!--        7-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            android:text="@string/ciekawostka_7"
+            android:textSize="16sp" />
+        <!--        8-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            android:text="@string/ciekawostka_8"
+            android:textSize="16sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
+<!--        9-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            android:text="@string/ciekawostka_9"
+            android:textSize="16sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
+        <!--        10-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            android:text="@string/ciekawostka_10"
+            android:textSize="16sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

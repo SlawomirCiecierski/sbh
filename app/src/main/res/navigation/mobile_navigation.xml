@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="pl.ciecierski.sbh.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_fotografie"
+        android:name="pl.ciecierski.sbh.ui.fotografie.FotografieFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_fotografie" />
+
+    <fragment
+        android:id="@+id/nav_ciekawostki"
+        android:name="pl.ciecierski.sbh.ui.ciekawostki.CiekawostkiFragment"
+        android:label="@string/menu_ciekawostki"
+        tools:layout="@layout/fragment_ciekawostki" />
+
+
+    <fragment
+        android:id="@+id/nav_autor"
+        android:name="pl.ciecierski.sbh.ui.autor.AutorFragment"
+        android:label="@string/menu_author"
+        tools:layout="@layout/fragment_autor" />
+
+    <fragment
+        android:id="@+id/nav_muzea"
+        android:name="pl.ciecierski.sbh.ui.muzea.MuzeaFragment"
+        android:label="@string/menu_muzea"
+        tools:layout="@layout/fragment_muzea" />
+</navigation>

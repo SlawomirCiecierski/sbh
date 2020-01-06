@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Sekrety bydgoskiej historii</string>
+    <string name="nav_header_title">Sekrety bydgoskiej historii</string>
+    <string name="nav_header_subtitle"> </string>
+    <string name="nav_header_desc">Herb Bydgoszczy</string>
+    <string name="action_witaj">Witaj..</string>
+    <string name="przydatne_separator">Przydatne</string>
+
+    <string name="menu_home">Główna</string>
+    <string name="menu_gallery">Fotografie</string>
+    <string name="menu_ciekawostki">Ciekawostki</string>
+    <string name="menu_muzea">Odwiedź koniecznie</string>
+    <string name="menu_author">Autor..</string>
+    <string name="photo_1">Fotografia 1</string>
+    <string name="photo_2">Fotografia 2</string>
+    <string name="photo_3">Fotografia 3</string>
+    <string name="photo_4">Fotografia 4</string>
+    <string name="photo_5">Fotografia 5</string>
+    <string name="photo_6">Fotografia 6</string>
+
+    <string name="ciekawostka_1">2 sierpnia 1914 r. w Bydgoszczy ogłoszono stan wojenny. Na lazarety zamieniono większość dużych obiektów w mieście, takich jak choćby sale gimnastyczne. Miesiąc od rozpoczęcia wojny w mieście istniało 10 lazaretów. Do końca 1914 r. ten stan powiększono o 100 %, w których to lazaretach leczono jednocześnie nawet 3000 rannych żołnierzy.</string>
+
+    <string name="ciekawostka_2">Przygotowania do powitania Wojska Polskiego w Bydgoszczy  trwały już od lipca 1919 roku. Prace dekoracyjne w mieście zlecono bydgoskiemu architektowi Teofilowi Biernackiemu.</string>
+
+    <string name="ciekawostka_3">Przed 1 kwietnia 1920 miasto składało się z pięciu zasadniczych części:
+        \n - <b>Stare Miasto:</b> Miasto, Zamek, Wyspa Młyńska (dawniej Okole), Przedmieście Kujawskie;
+        \n - <b>Część północna:</b> Ludwikowo (Jachcice), Stacja kolejowa, Bocianowo I (Wielkie), Bocianowo II(Małe), Przedmieście Gdańskie, Grodztwo Zachodnie, Grodztwo Wschodnie, Cmentarze północne, Koszary północne, Koszary leśne, Szkoła wojenna, Boisko sportowe;
+        \n - <b>Część zachodnia:</b> Okole (dzisiejsze), Koszary ułańskie, Przedmieście Poznańskie;
+        \n - <b>Część południowa:</b> Szwederowo, Nowy Dwór, Bielice;
+        \n - <b>Część wschodnia:</b> Przedmieście Toruńskie, Probostwo, Wzgórze Wolności, Żupy
+\n \nRejony o największej powierzchni to: Grodztwo Wschodnie – 145 ha,  Ludwikowo – 63,5 ha, Bocianowo I (Wielkie) – 60 ha.</string>
+
+    <string name="ciekawostka_4">Nocą z 10 na 11 listopada 1918r. w mieście doszło do starcia grupki niemieckich żołnierzy z patrolem Rady Żołnierskiej. Incydent zakończył kilkoma ofiarami śmiertelnymi i kilkoma rannymi. Bunt wśród jednostek bydgoskiego garnizonu rozgorzał najpierw w 14 Pułku Piechoty im. Hrabiego von Schwerin (3 Pomorski).</string>
+
+    <string name="ciekawostka_4a">Naczelna Rada Ludowa na miasto Bydgoszcz została powołana 16 listopada 1918 roku. Prezesem został wybrany Jan Biziel, sekretarzem Jan Teska, skarbnikiem Józef Milchert, a członkami zarządu Władysław Kużaj i Antoni Czarnecki.</string>
+
+    <string name="ciekawostka_4b">"20 maja 1919 r. do restauracji Sikorskiego znajdującej się przy u. Gdańskiej wtargnęli członkowie Grenzschutzu i obrzucili granatami znajdujących się we wnętrzu zebranych Polaków.
+            \n30 maja 1919 r. trzech żołnierzy Grenzschutzu wtargnęło na teren kościoła farnego i obrzucili kamieniami grotę Matki Boskiej z Lourdes.
+            \nOd 18 stycznia 1919 r. do 21 stycznia 1920 roku trwała Konferencja Pokojowa w Paryżu.
+            \n18 lutego 1919 r., doszło do potyczki pod Rynarzewem, która zakończyła się zdobyciem niemieckiego pociągu pancernego Panzerzug 22, który następnie został przemianowany na „Danuta”
+            \n25 listopada 1919 r. podpisano umowę o wycofaniu wojsk z odstąpionych obszarów oraz przekazaniu w ręce polskie zarządu cywilnego nad tymi obszarami."</string>
+
+
+    <string name="ciekawostka_5">Przygotowania do powitania Wojska Polskiego w Bydgoszczy  trwały już od lipca 1919 roku. Prace dekoracyjne w mieście zlecono bydgoskiemu architektowi Teofilowi Biernackiemu.</string>
+
+    <string name="ciekawostka_6">W nocy z 19 na 20 stycznia 1920r. przemalowano w biało-czerwone barwy wszystkie budki strażnicze stojące przy bramach koszarowych i ważniejszych wojskowych obiektach. Środki na zakup farby pochodziły z licznych zbiórek funduszy, w których hojnie uczestniczyli mieszkańcy Bydgoszczy</string>
+
+    <string name="ciekawostka_7">W bardzo krótkim czasie Bydgoszcz z typowo pruskiego miasta przerodziła się w pełnoprawną polską metropolię. Jeszcze dziesięć lat wcześniej Bydgoszcz była zamieszkiwana przez 19 % Polaków. Według danych z przełomu 1928/1929 r. Polacy stanowili 92% populacji miasta.</string>
+
+    <string name="ciekawostka_8">Bydgoskie więzienie zostało przejęte przez podprokuratora przy Sądzie Okręgowym Jarosława Czarlińskiego oraz prokuratora krajowego Alfreda Jossè.</string>
+
+    <string name="ciekawostka_9">Z gabinetu przeznaczonego dla Prezydenta usunięto portret Fryderyka II i zawieszono obraz przedstawiający poznański ratusz. Oczywiście uczyniono to z powodu braku portretów polskich przywódców, a nie uwielbienia do Poznania.</string>
+
+    <string name="ciekawostka_10">20 stycznia 1920 roku w godzinach przedpołudniowych po ponad wiekowej niewoli w granice miasta wkroczyli pierwsi polscy żołnierze. Na Stary Rynek oddział ppłk. Witolda Butlera  wkroczył wraz z 3 szwadronem 2 Pułku Ułanów Wielkopolskich pod dowództwem rtm. Stanisława Zakrzewskiego  punktualnie o godz. 12.00. 22 stycznia 1920r. po uroczystościach na Rynku odbyła się defilada wojsk ulicą Gdańską przed Generałem Muśnickim, który stał na placu Wolności (Weltziena) w otoczeniu swego sztabu i licznej świty.</string>
+
+
+    <string name="mwl_title">Muzeum Wojsk Lądowych</string>
+    <string name="mwl_ulica">\nul. Czerkawska 2</string>
+    <string name="mwl_miasto">85–641 Bydgoszcz</string>
+    <string name="mwl_tel">tel. 261 412 026</string>
+    <string name="mo_title">Muzeum Okręgowe im. Leona Wyczółkowskiego w Bydgoszczy:</string>
+    <string name="mo_ulica">\nDział Edukacji i Promocji, ul. Mennica 6</string>
+    <string name="mo_miasto">85–112 Bydgoszcz</string>
+    <string name="mo_tel">tel. 52 5859910</string>
+    <string name="ipg_title">Izba Pamięci Adama Grzymały–Siedleckiego – Pracownia Teatrologiczna</string>
+    <string name="ipg_ulica">\nul. Libelta 5</string>
+    <string name="ipg_miasto">85–080 Bydgoszcz</string>
+    <string name="ipg_tel">tel. 573–313–566</string>
+    <string name="bibl_title">Wojewódzka i Miejska Biblioteka Publiczna im. dr. Witolda Bełzy</string>
+    <string name="bibl_ulica">\nStary Rynek 22–24</string>
+    <string name="bibl_miasto">85–105 Bydgoszcz</string>
+    <string name="bibl_tel">Dział Udostępniania Zbiorów: tel. 52 3399250\n\n</string>
+
+
+    <string name="description_developer">\nSławomir Ciecierski - programista Java, kompozytor\n\n\n.</string>
+
+
+    <string name="description_author">\nKrzysztof Drozdowski - urodził się 15.03.1985 roku w Bydgoszczy. Historyk, społecznik, działacz na rzecz podniesienia świadomości historycznej w Bydgoszczy i regionie.
+        Członek Towarzystwa Miłośników Miasta Bydgoszczy. Doprowadził do wznowienia przez IPN śledztwa w sprawie fordońskiej Doliny Śmierci.Jest autorem publikacji: <i>Bitwa o Bydgoszcz 1945</i>, <i>Bydgoszcz wita Armię</i>, <i>Graudenz 1945 – ostatnie tchnienie</i>, <i>Bydgoska architektura militarna w latach 1772-1945;</i> <i>Z lotu ptaka</i>; <i>Bydgoszcz na fotografii lotniczej w latach 1911-1945</i>, <i>Tajemnica Doliny Śmierci;</i> <i>Droga do prawdy</i>, <i>Artylerzysta Piłsudskiego</i>; <i>Wspomnienia gen. Jana Chmurowicza</i>, <i>Wojenne sekrety Bydgoszczy</i>. Jest również współautorem publikacji <i>Bitwa o Bydgoszcz 1945, walki, wspomnienia, relacje</i>; <i>16 Pułk Ułanów Wielkopolskich im. gen. dyw. Gustawa Orlicz-Dreszera 1918-1939</i> oraz <i>Świat odosobniony</i>; <i>Bydgoska służba penitencjarna w latach 1920-1939.</i> Ponadto opublikował ponad 40 artykułów naukowych i popularnonaukowych\n\n.</string>
+
+    <string name="description_photo_1">Powitanie pierwszych oddziałów wojska polskiego po wkroczeniu do miasta w dniu 20 stycznia 1920r.  Na środku stoi ppłk Witold Butler dowódca oddziału saperów oraz pierwszy wojskowy komendant miasta. Przed nim stoją przedstawiciele władz miasta i Podkomisariatu Naczelnej Rady Ludowej.</string>
+    <string name="description_photo_2">Pierwsze oddziały 15 Dywizji Piechoty oraz 16 Pułku Ułanów Wielkopolskich po wkroczeniu na płytę Starego Rynku.</string>
+    <string name="description_photo_3">Orkiestra 16 Pułku Ułanów Wielkopolskich podczas defilady na ul. Gdańskiej w dniu 22 stycznia 1920 roku. Defiladę przyjmował dowódca Frontu Wielkopolskiego gen. Józef Dowbor-Muśnicki.</string>
+    <string name="description_photo_4">22 stycznia 1920r. Zebrane wojska wielkopolskie na płycie Starego Rynku podczas polowej mszy św.</string>
+    <string name="description_photo_5">Jan Biziel podczas przemówienia do zebranych mieszkańców miasta w trakcie powitania gen. Józefa Dowbora-Muśnickiego w dniu 22 stycznia 1920r.</string>
+    <string name="description_photo_6">Generał Józef Dowbor-Muśnicki w trakcie przemówienia po mszy św. polowej odprawionej na płycie Starego Rynku w dniu 22 stycznia 1920r.</string>
+
+
+    <string name="text_home">\n<i>Aplikacja ma za zadanie przybliżyć ważne wydarzenia z życia Bydgoszczy, które przez lata popadły w zapomnienie. Piękna historia miasta, nietuzinkowe postaci – przyjrzyj się uważnie tym unikalnym zdjęciom: to wszystko w aplikacji pod nazwą: <b>Sekrety Bydgoskiej Historii</b>.
+        \n \n  Krzysztof Drozdowski</i>
+    </string>
+</resources>
