@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/nav_header_desc"
-        android:paddingLeft="88dp"
+        android:paddingStart="100dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         app:srcCompat="@drawable/ico_herb6" />
 

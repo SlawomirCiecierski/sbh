@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Sekrety bydgoskiej historii</string>
-    <string name="nav_header_title">Sekrety bydgoskiej historii</string>
+    <string name="nav_header_title">Sekrety bydgoskiej historii v.1.0.5</string>
     <string name="nav_header_subtitle"> </string>
     <string name="nav_header_desc">Herb Bydgoszczy</string>
     <string name="action_witaj">Witaj..</string>
@@ -83,8 +83,8 @@
     <string name="description_photo_3">Orkiestra 16 Pułku Ułanów Wielkopolskich podczas defilady na ul. Gdańskiej w dniu 22 stycznia 1920 roku. Defiladę przyjmował dowódca Frontu Wielkopolskiego gen. Józef Dowbor-Muśnicki.</string>
     <string name="description_photo_4">22 stycznia 1920r. Zebrane wojska wielkopolskie na płycie Starego Rynku podczas polowej mszy św.</string>
     <string name="description_photo_5">Jan Biziel podczas przemówienia do zebranych mieszkańców miasta w trakcie powitania gen. Józefa Dowbora-Muśnickiego w dniu 22 stycznia 1920r.</string>
-    <string name="description_photo_6">Generał Józef Dowbor-Muśnicki w trakcie przemówienia po mszy św. polowej odprawionej na płycie Starego Rynku w dniu 22 stycznia 1920r.</string>
-
+    <string name="description_photo_6">Generał Józef Dowbor-Muśnicki w trakcie przemówienia po mszy św. polowej odprawionej na płycie Starego Rynku w dniu 22 stycznia 1920r.
+        \n \n \n<b>Zdjęcia pochodzą z Muzeum Wojsk Lądowych.</b> \n \n \n </string>
 
     <string name="text_home">\n<i>Aplikacja ma za zadanie przybliżyć ważne wydarzenia z życia Bydgoszczy, które przez lata popadły w zapomnienie. Piękna historia miasta, nietuzinkowe postaci – przyjrzyj się uważnie tym unikalnym zdjęciom: to wszystko w aplikacji pod nazwą: <b>Sekrety Bydgoskiej Historii</b>.
         \n \n  Krzysztof Drozdowski</i>

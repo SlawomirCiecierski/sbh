@@ -1,3 +1,8 @@
+/*
+todo wersja 5 do testowania wewnętrznego v.1.0.5
+ */
+
+
 package pl.ciecierski.sbh;
 
 import android.app.AlertDialog;
@@ -27,7 +32,6 @@ import android.view.Menu;
 import static pl.ciecierski.sbh.ui.toasts.BydgoszczRandomToast.showBydgoszczRandomToast;
 
 
-
 public class MainActivity extends AppCompatActivity {
 
 
@@ -50,8 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home,
                 R.id.nav_fotografie,
@@ -90,7 +93,12 @@ public class MainActivity extends AppCompatActivity {
 
 
         int id = item.getItemId();
-
+/*
+todo utworzyć case do menu - wybór tematu
+1. 1920
+2. kwiecień
+3. ?
+ */
         if (id == R.id.action_witaj) {
             new WelcomeDialog().showWelcomeDialog();
             return true;
@@ -99,13 +107,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
     /*
-    Dialogs implementation
+    Dialogs implementation start
      */
     private class FirstWelcomeDialog {
         void showFirstWelcomeDialog() {
+//            wykorzystanie preferences do wykrycia pierwszego użycia aplikacji
             SharedPreferences preferences = getPreferences(MODE_PRIVATE);
             boolean firstRun = preferences.getBoolean("first_run", true);
 
@@ -131,4 +138,7 @@ public class MainActivity extends AppCompatActivity {
             dialog.show();
         }
     }
+    /*
+    Dialogs implementation end
+    */
 }
