@@ -1,3 +1,7 @@
+/*
+toasty do modyfikacji
+już nie będą pokazywać randomowych ciekawostek
+ */
 package pl.ciecierski.sbh.ui.toasts;
 
 

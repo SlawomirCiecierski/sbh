@@ -29,6 +29,9 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 
+import static pl.ciecierski.sbh.sections.RandomDialogBySections.showRandomDialogBySection;
+import static pl.ciecierski.sbh.sections.Sections.RETURN_TO_POLAND;
+//toasty do modyfikacji
 import static pl.ciecierski.sbh.ui.toasts.BydgoszczRandomToast.showBydgoszczRandomToast;
 
 
@@ -45,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
 
+//        toasty do modyfikacji
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -100,7 +104,7 @@ todo utworzyć case do menu - wybór tematu
 3. ?
  */
         if (id == R.id.action_witaj) {
-            new WelcomeDialog().showWelcomeDialog();
+            new HistoricalDialog().showCzyWieszZe();
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -129,11 +133,12 @@ todo utworzyć case do menu - wybór tematu
         }
     }
 
-    private class WelcomeDialog {
-        void showWelcomeDialog() {
+    private class HistoricalDialog {
+        void showCzyWieszZe() {
+
             AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity.this);
-            dialogBuilder.setTitle("Witaj");
-            dialogBuilder.setMessage("Witaj w aplikacji Sekrety Bydgoskiej Historii");
+            dialogBuilder.setTitle("Czy wiesz, że..");
+            dialogBuilder.setMessage(showRandomDialogBySection(RETURN_TO_POLAND));
             AlertDialog dialog = dialogBuilder.create();
             dialog.show();
         }
