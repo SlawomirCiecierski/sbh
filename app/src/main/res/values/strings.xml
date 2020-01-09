@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Sekrety bydgoskiej historii</string>
-    <string name="nav_header_title">Sekrety bydgoskiej historii v.1.0.5</string>
-    <string name="nav_header_subtitle"> </string>
+    <string name="nav_header_title">Sekrety bydgoskiej historii</string>
+    <string name="nav_header_subtitle">100 lat Bydgoszczy w Polsce </string>
     <string name="nav_header_desc">Herb Bydgoszczy</string>
-    <string name="action_czy_wiesz_ze">-?!?-</string>
+    <string name="action_czy_wiesz_ze">Czy wiesz, że..</string>
     <string name="przydatne_separator">Przydatne</string>
 
     <string name="menu_home">Główna</string>
@@ -70,9 +70,18 @@
     <string name="bibl_ulica">\nStary Rynek 22–24</string>
     <string name="bibl_miasto">85–105 Bydgoszcz</string>
     <string name="bibl_tel">Dział Udostępniania Zbiorów: tel. 52 3399250\n\n</string>
+    <string name="version">Sekrety Bydgoskiej Historii wersja 1.0.5</string>
 
 
-    <string name="description_developer">\nSławomir Ciecierski - programista Java, kompozytor\n\n\n.</string>
+    <string name="description_developer">\nSławomir Ciecierski - kierownik projektu, programista Java, kompozytor\n.
+    \nZespół:
+        \ntesterzy:
+        \nKonrad Stankiewicz
+        \nMarcin Hyba
+        \n…
+
+        \n\n\n
+    </string>
 
 
     <string name="description_author">\nKrzysztof Drozdowski - urodził się 15.03.1985 roku w Bydgoszczy. Historyk, społecznik, działacz na rzecz podniesienia świadomości historycznej w Bydgoszczy i regionie.
@@ -89,4 +98,6 @@
     <string name="text_home">\n<i>Aplikacja ma za zadanie przybliżyć ważne wydarzenia z życia Bydgoszczy, które przez lata popadły w zapomnienie. Piękna historia miasta, nietuzinkowe postaci – przyjrzyj się uważnie tym unikalnym zdjęciom: to wszystko w aplikacji pod nazwą: <b>Sekrety Bydgoskiej Historii</b>.
         \n \n  Krzysztof Drozdowski</i>
     </string>
+
+
 </resources>

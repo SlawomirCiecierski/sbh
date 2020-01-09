@@ -2,7 +2,7 @@ package pl.ciecierski.sbh.sections;
 
 import java.util.LinkedList;
 
-class RandomDialogFromSection {
+class RandomTextFromSection {
 
     String getRandomDialogFromSection(Sections s){
 
@@ -47,7 +47,7 @@ class RandomDialogFromSection {
                     to.add("25 listopada 1919 r. podpisano umowę o wycofaniu wojsk z odstąpionych obszarów oraz przekazaniu w ręce polskie zarządu cywilnego nad tymi obszarami.");
                 }
                 int listRandomIndex = (int) (Math.random() * to.size());
-                return to.get(listRandomIndex);
+                return (listRandomIndex+1)+".\n"+to.get(listRandomIndex);
 
             case ERYGOWANIE:
                 return "Erygowanie";

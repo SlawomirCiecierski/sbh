@@ -31,8 +31,8 @@ import android.view.Menu;
 
 import static pl.ciecierski.sbh.sections.RandomDialogBySections.showRandomDialogBySection;
 import static pl.ciecierski.sbh.sections.Sections.RETURN_TO_POLAND;
-//toasty do modyfikacji
-import static pl.ciecierski.sbh.ui.toasts.BydgoszczRandomToast.showBydgoszczRandomToast;
+
+import static pl.ciecierski.sbh.ui.toasts.VersionToast.showVersionToast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -48,11 +48,11 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
 
-//        toasty do modyfikacji
+//       todo toasty do modyfikacji
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showBydgoszczRandomToast(view);
+                showVersionToast(view);
             }
         });
 
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
 
         /*
-        przy pierwszym użyciu wyświetla komunikat powitalny
+        przy pierwszym użyciu aplikacji wyświetla komunikat powitalny
          */
         new FirstWelcomeDialog().showFirstWelcomeDialog();
     }
@@ -123,9 +123,9 @@ todo utworzyć case do menu - wybór tematu
             if (firstRun) {
                 AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity.this);
                 dialogBuilder.setTitle("Łączy nas Bydgoszcz!");
-                dialogBuilder.setMessage("Cieszymy się, że zdecydowałeś się skorzystać z tej aplikacji. Życzymy miłego odbioru.");
-                AlertDialog dialog = dialogBuilder.create();
-                dialog.show();
+                dialogBuilder.setMessage("Cieszymy się, że zdecydowałeś się skorzystać z tej aplikacji. Powodzenia w zdobywaniu wiedzy.");
+//                AlertDialog dialog = dialogBuilder.create();
+                dialogBuilder.show();
             }
             SharedPreferences.Editor editor = preferences.edit();
             editor.putBoolean("first_run", false);
@@ -139,8 +139,9 @@ todo utworzyć case do menu - wybór tematu
             AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity.this);
             dialogBuilder.setTitle("Czy wiesz, że..");
             dialogBuilder.setMessage(showRandomDialogBySection(RETURN_TO_POLAND));
-            AlertDialog dialog = dialogBuilder.create();
-            dialog.show();
+            dialogBuilder.setIconAttribute(android.R.attr.alertDialogIcon);
+//           dialogBuilder.create();
+            dialogBuilder.show();
         }
     }
     /*
