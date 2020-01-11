@@ -15,7 +15,7 @@ public class VersionToast {
     public static void showVersionToast(View view) {
 
 
-        Toast toast = Toast.makeText(view.getContext(), "Sekrety Bydgoskiej Historii wersja 1.0.5", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(view.getContext(), "Sekrety Bydgoskiej Historii wersja 1.0.9", Toast.LENGTH_SHORT);
         toast.show();
     }
 }

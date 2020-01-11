@@ -7,12 +7,13 @@
     android:layout_height="match_parent"
     android:background="@drawable/tlo"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
     tools:context=".ui.fotografie.FotografieFragment">
 <!--1-->
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
         android:orientation="vertical">
 
         <ImageView
@@ -32,18 +33,19 @@
             android:text="@string/photo_1"
             android:textSize="20sp" />
 
+
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="390dp"
-            android:scaleType="fitCenter"
+            android:layout_height="400dp"
             android:contentDescription="@string/photo_1"
             android:soundEffectsEnabled="true"
             android:src="@drawable/photo1"
             android:visibility="visible" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:text="@string/description_photo_1"
             android:textSize="16sp" />
 
@@ -68,8 +70,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="360dp"
-            android:scaleType="fitCenter"
             android:contentDescription="@string/photo_2"
+            android:scaleType="fitCenter"
             android:soundEffectsEnabled="true"
             android:src="@drawable/photo2"
             android:visibility="visible" />
@@ -77,6 +79,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:text="@string/description_photo_2"
             android:textSize="16sp" />
         <!--3-->
@@ -109,6 +112,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:text="@string/description_photo_3"
             android:textSize="16sp" />
         <!--4-->
@@ -141,6 +145,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:text="@string/description_photo_4"
             android:textSize="16sp" />
 
@@ -164,7 +169,7 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="360dp"
+            android:layout_height="350dp"
             android:scaleType="fitCenter"
             android:contentDescription="@string/photo_5"
             android:soundEffectsEnabled="true"
@@ -174,6 +179,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:text="@string/description_photo_5"
             android:textSize="16sp" />
 
@@ -197,7 +203,7 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="360dp"
+            android:layout_height="300dp"
             android:scaleType="fitCenter"
             android:contentDescription="@string/photo_6"
             android:soundEffectsEnabled="true"
@@ -207,6 +213,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:text="@string/description_photo_6"
             android:textSize="16sp" />
 
