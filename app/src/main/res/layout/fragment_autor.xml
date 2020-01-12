@@ -22,6 +22,8 @@
             android:src="@drawable/autor"
             android:visibility="visible" />
 
+
+        <!--        2-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,8 +31,6 @@
             android:text="@string/description_author"
             android:textSize="16sp" />
 
-
-        <!--        2-->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
