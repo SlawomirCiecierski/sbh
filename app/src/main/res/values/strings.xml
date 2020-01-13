@@ -17,6 +17,7 @@
     <string name="photo_4">Fotografia 4</string>
     <string name="photo_5">Fotografia 5</string>
     <string name="photo_6">Fotografia 6</string>
+    <string name="herb">Herb Bydgoszczy</string>
 
     <string name="ciekawostka_1">2 sierpnia 1914r. w Bydgoszczy ogłoszono stan wojenny. Na lazarety zamieniono większość dużych obiektów w mieście, takich jak choćby sale gimnastyczne. Miesiąc od rozpoczęcia wojny w mieście istniało 10 lazaretów. Do końca 1914r. ten stan powiększono o 100 %, w których to lazaretach leczono jednocześnie nawet 3000 rannych żołnierzy.</string>
 
@@ -73,17 +74,19 @@
     <string name="version">Sekrety Bydgoskiej Historii wersja 1.0.5</string>
 
 
-    <string name="description_developer_android">\n<b>Sławomir Ciecierski</b>> - kierownik projektu, programista aplikacji mobilnych na Androida, kompozytor.\n\n </string>
+    <string name="description_developer_android">\n<b>Sławomir Ciecierski</b>> - kierownik projektu, programista aplikacji mobilnych na Androida, kompozytor. Wersja aplikacji na Android.\n\n </string>
 
-    <string name="description_developer_ios">\n<b>Mateusz Szafraniec</b> - programista aplikacji mobilnych.
-        \n\nZespół testerów w składzie:
-        \nKonrad Stankiewicz;
-        \nMarcin Hyba;
-        \nPaweł Cymbaluk;
-        \n…
+    <string name="description_developer_ios">\n<b>Mateusz Szafraniec</b> - programista aplikacji mobilnych. Wersja aplikacji na iOS.\n\n
+    \nZespół testerów w składzie:\n</string>
 
-        \n\n\n
-    </string>
+    <string name="description_tester1">
+        \n1. <b>Konrad Stankiewicz</b>;\n
+        </string>
+    <string name="description_tester2">\n2. <b>Paweł Cymbaluk</b>;</string>
+    <string name="description_tester3">\n3. Marcin Hyba;
+        \n
+        \n\n</string>
+
 
 
     <string name="description_author">\n<b>Krzysztof Drozdowski</b> - urodził się 15.03.1985 roku w Bydgoszczy. Historyk, społecznik, działacz na rzecz podniesienia świadomości historycznej w Bydgoszczy i regionie.
