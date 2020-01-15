@@ -56,7 +56,7 @@
 
 
     <string name="mwl_title">Muzeum Wojsk Lądowych</string>
-    <string name="mwl_ulica">\nul. Czerkawska 2</string>
+    <string name="mwl_ulica">\nul. Czerkaska 2</string>
     <string name="mwl_miasto">85–641 Bydgoszcz</string>
     <string name="mwl_tel">tel. 261 412 026</string>
     <string name="mo_title">Muzeum Okręgowe im. Leona Wyczółkowskiego w Bydgoszczy\nDział Edukacji i Promocji</string>
@@ -74,7 +74,7 @@
     <string name="version">Sekrety Bydgoskiej Historii wersja 1.0.5</string>
 
 
-    <string name="description_developer_android">\n<b>Sławomir Ciecierski</b>> - kierownik projektu, programista aplikacji mobilnych na Androida, kompozytor. Wersja aplikacji na Android.\n\n </string>
+    <string name="description_developer_android">\n<b>Sławomir Ciecierski</b> - kierownik projektu, programista aplikacji mobilnych na Androida, kompozytor. Wersja aplikacji na Android.\n\n </string>
 
     <string name="description_developer_ios">\n<b>Mateusz Szafraniec</b> - programista aplikacji mobilnych. Wersja aplikacji na iOS.\n\n
     \nZespół testerów w składzie:\n</string>
