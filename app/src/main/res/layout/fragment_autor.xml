@@ -90,11 +90,30 @@
             android:text="@string/description_tester2"
             android:textSize="16sp" />
 <!--        6-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_1"
+            android:src="@drawable/tester_lk"
+            android:visibility="visible" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
             android:text="@string/description_tester3"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="@string/description_tester4"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="@string/description_tester5"
             android:textSize="16sp" />
 
     </LinearLayout>

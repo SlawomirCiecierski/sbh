@@ -2,10 +2,12 @@
 todo wersja 5 do testowania wewnętrznego v.1.0.5
  */
 
+//todo obrazki 1200 px wysokość
 
 package pl.ciecierski.sbh;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
@@ -28,18 +30,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
-import android.widget.ImageView;
+
+import pl.ciecierski.sbh.ui.fotografie.Fotografia1Activity;
+import pl.ciecierski.sbh.ui.fotografie.Fotografia2Activity;
+import pl.ciecierski.sbh.ui.fotografie.Fotografia3Activity;
+import pl.ciecierski.sbh.ui.fotografie.Fotografia4Activity;
+import pl.ciecierski.sbh.ui.fotografie.Fotografia5Activity;
+import pl.ciecierski.sbh.ui.fotografie.Fotografia6Activity;
 
 import static pl.ciecierski.sbh.sections.RandomDialogBySections.showRandomDialogBySection;
 import static pl.ciecierski.sbh.sections.Sections.RETURN_TO_POLAND;
-
 import static pl.ciecierski.sbh.ui.toasts.VersionToast.showVersionToast;
 
 
 public class MainActivity extends AppCompatActivity {
 
-
+    public final static String FRAI = "first_run_after_installation";
+    public final static String FRMA = "first_run_mainactivity";
+    public static boolean isRun;
     private AppBarConfiguration mAppBarConfiguration;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +70,9 @@ public class MainActivity extends AppCompatActivity {
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
-
+/*
+todo w zalezności od wybranego działu skontruować menu z różnymi fragmentami
+ */
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home,
                 R.id.nav_fotografie,
@@ -73,11 +85,11 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-
-
         /*
         przy pierwszym użyciu aplikacji wyświetla komunikat powitalny
          */
+
+
         new FirstWelcomeDialog().showFirstWelcomeDialog();
     }
 
@@ -102,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
         int id = item.getItemId();
 /*
-todo utworzyć case do menu - wybór tematu
+todo utworzyć case do menu - wybór tematu/działu
 1. 1920
 2. kwiecień
 3. ?
@@ -121,19 +133,44 @@ todo utworzyć case do menu - wybór tematu
     private class FirstWelcomeDialog {
         void showFirstWelcomeDialog() {
 //            wykorzystanie preferences do wykrycia pierwszego użycia aplikacji
-            SharedPreferences preferences = getPreferences(MODE_PRIVATE);
-            boolean firstRun = preferences.getBoolean("first_run", true);
+            SharedPreferences preferencesFirstRunAfterInstallation = getPreferences(MODE_PRIVATE);
+            boolean firstRunAfterInstallation = preferencesFirstRunAfterInstallation.getBoolean(FRAI, true);
+            SharedPreferences preferencesFirstRunMainActivity = getPreferences(MODE_PRIVATE);
+            boolean firstRunMainActivity = preferencesFirstRunMainActivity.getBoolean(FRMA, true);
 
-            if (firstRun) {
+            String title;
+            String msg;
+
+            if (firstRunAfterInstallation) {
+                title = "Twój pierwszy raz!";
+                msg = "Cieszymy się, że zdecydowałeś się skorzystać z tej aplikacji.";
+                msg += "\nAplikacja ma za zadanie przybliżyć ważne wydarzenia z życia Bydgoszczy, które przez lata popadły w zapomnienie. Piękna historia miasta, nietuzinkowe postaci – przyjrzyj się uważnie tym unikalnym zdjęciom: to wszystko w aplikacji pod nazwą: Sekrety Bydgoskiej Historii.\n\n" + "\t\t\t\t\t\t\t\tKrzysztof Drozdowski";
                 AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity.this);
-                dialogBuilder.setTitle("Łączy nas Bydgoszcz!");
-                dialogBuilder.setMessage("Cieszymy się, że zdecydowałeś się skorzystać z tej aplikacji. Powodzenia w zdobywaniu wiedzy.");
-//                AlertDialog dialog = dialogBuilder.create();
+                dialogBuilder.setTitle(title);
+                dialogBuilder.setMessage(msg);
                 dialogBuilder.show();
+
+                SharedPreferences.Editor editorFRAI = preferencesFirstRunAfterInstallation.edit();
+                editorFRAI.putBoolean(FRAI, false);
+                editorFRAI.apply();
+
+                SharedPreferences.Editor editorFRMA = preferencesFirstRunMainActivity.edit();
+                editorFRMA.putBoolean(FRMA, false);
+                editorFRMA.apply();
+
+
+            } else if (firstRunMainActivity || !isRun) {
+                title = "Sekrety Bydgoskiej Historii";
+                msg = "Aplikacja ma za zadanie przybliżyć ważne wydarzenia z życia Bydgoszczy, które przez lata popadły w zapomnienie. Piękna historia miasta, nietuzinkowe postaci – przyjrzyj się uważnie tym unikalnym zdjęciom.\n\n" + "\t\t\t\t\t\t\t\tKrzysztof Drozdowski";
+                AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity.this);
+                dialogBuilder.setTitle(title);
+                dialogBuilder.setMessage(msg);
+                dialogBuilder.show();
+
+                SharedPreferences.Editor editorFRMA = preferencesFirstRunMainActivity.edit();
+                editorFRMA.putBoolean(FRMA, false);
+                editorFRMA.apply();
             }
-            SharedPreferences.Editor editor = preferences.edit();
-            editor.putBoolean("first_run", false);
-            editor.apply();
         }
     }
 
@@ -144,11 +181,38 @@ todo utworzyć case do menu - wybór tematu
             dialogBuilder.setTitle("Czy wiesz, że..");
             dialogBuilder.setMessage(showRandomDialogBySection(RETURN_TO_POLAND));
             dialogBuilder.setIconAttribute(android.R.attr.alertDialogIcon);
-//           dialogBuilder.create();
             dialogBuilder.show();
         }
     }
-    /*
-    Dialogs implementation end
-    */
+
+    public void onClickSmallFotografia1(View view) {
+        isRun=true;
+        startActivity(new Intent(this, Fotografia1Activity.class));
+    }
+
+    public void onClickSmallFotografia2(View view) {
+        isRun=true;
+        startActivity(new Intent(this, Fotografia2Activity.class));
+    }
+
+    public void onClickSmallFotografia3(View view) {
+        isRun=true;
+        startActivity(new Intent(this, Fotografia3Activity.class));
+    }
+
+    public void onClickSmallFotografia4(View view) {
+        isRun=true;
+        startActivity(new Intent(this, Fotografia4Activity.class));
+    }
+
+    public void onClickSmallFotografia5(View view) {
+        isRun=true;
+        startActivity(new Intent(this, Fotografia5Activity.class));
+    }
+
+    public void onClickSmallFotografia6(View view) {
+        isRun=true;
+        startActivity(new Intent(this, Fotografia6Activity.class));
+    }
+
 }

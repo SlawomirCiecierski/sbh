@@ -31,20 +31,22 @@
             android:layout_gravity="top"
             android:gravity="center_horizontal"
             android:text="@string/photo_1"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <!--fot1.click-->
         <ImageView
             android:id="@+id/image1"
-
             android:layout_width="wrap_content"
-            android:layout_height="400dp"
+            android:layout_height="wrap_content"
             android:clickable="true"
             android:contentDescription="@string/photo_1"
             android:focusable="true"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClickSmallFotografia1"
             android:soundEffectsEnabled="true"
-            android:src="@drawable/photo1"
-            android:visibility="visible" />
+            android:src="@drawable/photo1small"
+            android:visibility="visible"
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -69,15 +71,17 @@
             android:layout_gravity="top"
             android:gravity="center_horizontal"
             android:text="@string/photo_2"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="360dp"
+            android:layout_height="wrap_content"
             android:contentDescription="@string/photo_2"
             android:scaleType="fitCenter"
             android:soundEffectsEnabled="true"
-            android:src="@drawable/photo2"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClickSmallFotografia2"
+            android:src="@drawable/photo2small"
             android:visibility="visible" />
 
         <TextView
@@ -102,15 +106,17 @@
             android:layout_gravity="top"
             android:gravity="center_horizontal"
             android:text="@string/photo_3"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="360dp"
+            android:layout_height="wrap_content"
             android:contentDescription="@string/photo_1"
             android:scaleType="fitCenter"
             android:soundEffectsEnabled="true"
-            android:src="@drawable/photo3"
+            android:onClick="onClickSmallFotografia3"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/photo3small"
             android:visibility="visible" />
 
         <TextView
@@ -135,15 +141,17 @@
             android:layout_gravity="top"
             android:gravity="center_horizontal"
             android:text="@string/photo_4"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="360dp"
+            android:layout_height="wrap_content"
             android:contentDescription="@string/photo_4"
             android:scaleType="fitCenter"
             android:soundEffectsEnabled="true"
-            android:src="@drawable/photo4"
+            android:onClick="onClickSmallFotografia4"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/photo4small"
             android:visibility="visible" />
 
         <TextView
@@ -169,15 +177,17 @@
             android:layout_gravity="top"
             android:gravity="center_horizontal"
             android:text="@string/photo_5"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="350dp"
+            android:layout_height="wrap_content"
             android:contentDescription="@string/photo_5"
             android:scaleType="fitCenter"
             android:soundEffectsEnabled="true"
-            android:src="@drawable/photo5"
+            android:onClick="onClickSmallFotografia5"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/photo5small"
             android:visibility="visible" />
 
         <TextView
@@ -203,15 +213,17 @@
             android:layout_gravity="top"
             android:gravity="center_horizontal"
             android:text="@string/photo_6"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="300dp"
+            android:layout_height="wrap_content"
             android:contentDescription="@string/photo_6"
             android:scaleType="fitCenter"
             android:soundEffectsEnabled="true"
-            android:src="@drawable/photo6"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClickSmallFotografia6"
+            android:src="@drawable/photo6small"
             android:visibility="visible" />
 
         <TextView
