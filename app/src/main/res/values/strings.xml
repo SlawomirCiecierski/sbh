@@ -52,7 +52,7 @@
 
     <string name="ciekawostka_9">Z gabinetu przeznaczonego dla Prezydenta usunięto portret Fryderyka II i zawieszono obraz przedstawiający poznański ratusz. Oczywiście uczyniono to z powodu braku portretów polskich przywódców, a nie z uwielbienia do Poznania.</string>
 
-    <string name="ciekawostka_10">20 stycznia 1920 roku w godzinach przedpołudniowych po ponad wiekowej niewoli w granice miasta wkroczyli pierwsi polscy żołnierze. Na Stary Rynek oddział ppłk. Witolda Butlera  wkroczył wraz z 3 szwadronem 2 Pułku Ułanów Wielkopolskich pod dowództwem rtm. Stanisława Zakrzewskiego  punktualnie o godz. 12.00. 22 stycznia 1920r. po uroczystościach na Rynku odbyła się defilada wojsk ulicą Gdańską przed Generałem Muśnickim, który stał na placu Wolności (Weltziena) w otoczeniu swego sztabu i licznej świty.</string>
+    <string name="ciekawostka_10">20 stycznia 1920 roku w godzinach przedpołudniowych po ponad wiekowej niewoli w granice miasta wkroczyli pierwsi polscy żołnierze. Na Stary Rynek oddział ppłk. Witolda Butlera  wkroczył wraz z 3 szwadronem 2 Pułku Ułanów Wielkopolskich pod dowództwem rtm. Stanisława Zakrzewskiego  punktualnie o godz. 12.00. 22 stycznia 1920r. po uroczystościach na Rynku odbyła się defilada wojsk ulicą Gdańską przed generałem Muśnickim, który stał na placu Wolności (Weltziena) w otoczeniu swego sztabu i licznej świty.</string>
 
 
     <string name="mwl_title">Muzeum Wojsk Lądowych</string>
@@ -72,6 +72,7 @@
     <string name="bibl_miasto">85–105 Bydgoszcz</string>
     <string name="bibl_tel"> tel. 523 399 250\n\n</string>
     <string name="version">Sekrety Bydgoskiej Historii wersja 1.0.5</string>
+    <string name="distance">-</string>
 
 
     <string name="description_developer_android">\n<b>Sławomir Ciecierski</b> - kierownik projektu, programista Java, kompozytor. Wersja aplikacji na Android.\n\n </string>
@@ -116,7 +117,7 @@
     <string name="description_photo_6">Generał Józef Dowbor-Muśnicki w trakcie przemówienia po mszy św. polowej odprawionej na płycie Starego Rynku w dniu 22 stycznia 1920r.
         \n \n \n<i>Zdjęcia pochodzą z Muzeum Wojsk Lądowych.</i> \n \n \n </string>
 
-    <string name="text_home">\n<i>Aplikacja ma za zadanie przybliżyć różne ważne wydarzenia z życia Bydgoszczy, które przez lata popadły w zapomnienie. Piękna historia miasta, nietuzinkowe postaci – przyjrzyj się uważnie tym unikalnym zdjęciom: to wszystko w aplikacji pod nazwą: <b>Sekrety Bydgoskiej Historii</b>. Projekt będzie rozwijał się o kolejne sekrety, więc wróć tu koniecznie.
+    <string name="text_home">\n<i>Aplikacja ma za zadanie przybliżyć różne ważne wydarzenia z życia Bydgoszczy, które przez lata popadły w zapomnienie. Piękna historia miasta, nietuzinkowe postaci – przyjrzyj się uważnie tym unikalnym zdjęciom: to wszystko w aplikacji pod nazwą <b>Sekrety Bydgoskiej Historii</b>. Projekt będzie rozwijał się o kolejne sekrety, więc wróć tu koniecznie.
         \n \n  Krzysztof Drozdowski</i></string>
 
 </resources>
