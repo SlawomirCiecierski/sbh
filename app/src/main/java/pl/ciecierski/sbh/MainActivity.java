@@ -28,7 +28,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import pl.ciecierski.sbh.ui.muzea.LocalizationsViewModel;
 import pl.ciecierski.sbh.ui.fotografie.Fotografia1Activity;
 import pl.ciecierski.sbh.ui.fotografie.Fotografia2Activity;
 import pl.ciecierski.sbh.ui.fotografie.Fotografia3Activity;
@@ -100,25 +99,24 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
         locationBibl.setLatitude(53.120912);
         locationBibl.setAltitude(50);
 
-        final Location locationMWL = new Location("MWL");
+        final Location locationMWL = new Location("MWL"); //lokalizacja Muzeum Wojsk Lądowych
 //        53.142302, 18.020765
         locationMWL.setLongitude(18.020765);
         locationMWL.setLatitude(53.142302);
         locationMWL.setAltitude(50);
 
-        final Location locationMO = new Location("MO");
+        final Location locationMO = new Location("MO"); //lokalizacja Muzeum Okręgowego
 //        53.122532, 17.997541
         locationMO.setLongitude(17.997541);
         locationMO.setLatitude(53.122532);
         locationMO.setAltitude(50);
 
-        final Location locationIPG = new Location("IPG");
+        final Location locationIPG = new Location("IPG"); //lokalizacja Instytutu Pamięci A.Grzymały
 //        53.128717, 18.008444
         locationIPG.setLongitude(18.008444);
         locationIPG.setLatitude(53.128717);
         locationIPG.setAltitude(50);
 
-//todo wpisać kolejne lokacje
         client = LocationServices.getFusedLocationProviderClient(this);
         client.getLastLocation()
                 .addOnCompleteListener(this, new OnCompleteListener<Location>() {
@@ -126,32 +124,55 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
                     public void onComplete(@NonNull Task<Location> task) {
                         String txtD;
                         if (task != null) {
-                            txtD = "Odległość ";
-                            txtD += String.valueOf(task.getResult().distanceTo(locationBibl));
-                            txtD += " m";
-                            MainActivity.txtBibl = txtD;
 
-                            txtD = "Odległość ";
-                            txtD += String.valueOf(task.getResult().distanceTo(locationIPG));
-                            txtD += " m";
-                            MainActivity.txtIPG = txtD;
 
-                            txtD = "Odległość ";
-                            txtD += String.valueOf(task.getResult().distanceTo(locationMO));
-                            txtD += " m";
-                            MainActivity.txtMO = txtD;
+//                            jeśli brak permissions to się wywala
+                            try {
+                                txtD = "Odległość ";
+                                txtD += String.valueOf((int) task.getResult().distanceTo(locationBibl));
+                                txtD += " m";
+                                MainActivity.txtBibl = txtD;
+                            } catch (RuntimeException e) {
+                                txtD = "Odległość: brak danych";
+                                MainActivity.txtBibl = txtD;
+                            }
 
-                            txtD = "Odległość ";
-                            txtD += String.valueOf(task.getResult().distanceTo(locationMWL));
-                            txtD += " m";
-                            MainActivity.txtMWL = txtD;
+                            try {
+                                txtD = "Odległość ";
+                                txtD += String.valueOf((int) task.getResult().distanceTo(locationIPG));
+                                txtD += " m";
+                                MainActivity.txtIPG = txtD;
+                            } catch (RuntimeException e) {
+                                txtD = "Odległość: brak danych";
+                                MainActivity.txtIPG = txtD;
+                            }
+
+                            try {
+                                txtD = "Odległość ";
+                                txtD += String.valueOf((int) task.getResult().distanceTo(locationMO));
+                                txtD += " m";
+                                MainActivity.txtMO = txtD;
+                            } catch (RuntimeException e) {
+                                txtD = "Odległość: brak danych";
+                                MainActivity.txtMO = txtD;
+                            }
+
+                            try {
+                                txtD = "Odległość ";
+                                txtD += String.valueOf((int) task.getResult().distanceTo(locationMWL));
+                                txtD += " m";
+                                MainActivity.txtMWL = txtD;
+                            } catch (RuntimeException e) {
+                                txtD = "Odległość: brak danych";
+                                MainActivity.txtMWL = txtD;
+                            }
+
                         }
-// todo uzupełnić o kolejne dystanse
                     }
                 });
 
         /*
-        przy pierwszym użyciu aplikacji wyświetla komunikat powitalny
+        przy pierwszym użyciu aplikacji (po zainstalowaniu) wyświetla komunikat powitalny
          */
         new FirstWelcomeDialog().showFirstWelcomeDialog();
     }
@@ -195,7 +216,7 @@ todo utworzyć case do menu - wybór tematu/działu
      */
     private class FirstWelcomeDialog {
         void showFirstWelcomeDialog() {
-//            wykorzystanie preferences do wykrycia pierwszego użycia aplikacji
+//            wykorzystanie shared preferences do wykrycia pierwszego użycia aplikacji
             SharedPreferences preferencesFirstRunAfterInstallation = getPreferences(MODE_PRIVATE);
             boolean firstRunAfterInstallation = preferencesFirstRunAfterInstallation.getBoolean(FRAI, true);
             SharedPreferences preferencesFirstRunMainActivity = getPreferences(MODE_PRIVATE);

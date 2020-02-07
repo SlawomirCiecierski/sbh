@@ -40,7 +40,7 @@ class RandomTextFromSection {
                     to.add("22 stycznia 1920r. do Bydgoszczy przybył dowódca Frontu Wielkopolskiego gen. Józef Dowbor-Muśnicki");
                     to.add("22 stycznia 1920r. po uroczystościach na Rynku odbyła się defilada wojsk ulicą Gdańską.");
                     to.add("25 stycznia o godzinie 16 do miasta wkroczyła reszta pododdziałów dawnego 8 Pułku Strzelców Wielkopolskich, obecnie przemianowanego na 62 pp. Wlkp.");
-                    to.add("20 maja 1919r. do restauracji Sikorskiego znajdującej się przy u. Gdańskiej wtargnęli członkowie Grenzschutzu i obrzucili granatami zebranych Polaków.");
+                    to.add("20 maja 1919r. do restauracji Sikorskiego znajdującej się przy ul. Gdańskiej wtargnęli członkowie Grenzschutzu i obrzucili granatami zebranych Polaków.");
                     to.add("30 maja 1919r. trzech żołnierzy Grenzschutzu wtargnęło na teren kościoła farnego i obrzucili kamieniami grotę Matki Boskiej z Lourdes.");
                     to.add("Od 18 stycznia 1919r. do 21 stycznia 1920 roku trwała Konferencja Pokojowa w Paryżu.");
                     to.add("18 lutego 1919r., doszło do potyczki pod Rynarzewem, która zakończyła się zdobyciem niemieckiego pociągu pancernego.");

@@ -4,7 +4,25 @@
     <item
         android:id="@+id/action_witaj"
         android:orderInCategory="100"
-        android:title="@string/action_czy_wiesz_ze"
-        app:showAsAction="always" />
-    
+        android:title="czy wiesz, że.."
+        app:showAsAction="always">
+
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/action_witaj2"-->
+<!--                android:orderInCategory="100"-->
+<!--                android:title="Bydgoszcz 1920"-->
+<!--                app:showAsAction="always" />-->
+
+<!--            <item-->
+<!--                android:id="@+id/action_witaj3"-->
+<!--                android:orderInCategory="100"-->
+<!--                android:title="Następne"-->
+<!--                app:showAsAction="always" />-->
+
+<!--        </menu>-->
+    </item>
+
+
+
 </menu>

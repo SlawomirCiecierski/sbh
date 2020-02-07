@@ -18,12 +18,6 @@
             android:icon="@drawable/twotone_apps_black_48"
             android:title="@string/menu_ciekawostki" />
 
-<!--todo usunąć-->
-<!--        <item-->
-<!--            android:id="@+id/nav_fotografia1"-->
-<!--            android:icon="@drawable/twotone_apps_black_48"-->
-<!--            android:title="@string/menu_gallery" />-->
-<!--        -->
     </group>
 
     <item android:title="@string/przydatne_separator">
