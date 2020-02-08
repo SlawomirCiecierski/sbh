@@ -28,12 +28,14 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import pl.ciecierski.sbh.ui.fotografie.Fotografia1Activity;
-import pl.ciecierski.sbh.ui.fotografie.Fotografia2Activity;
-import pl.ciecierski.sbh.ui.fotografie.Fotografia3Activity;
-import pl.ciecierski.sbh.ui.fotografie.Fotografia4Activity;
-import pl.ciecierski.sbh.ui.fotografie.Fotografia5Activity;
-import pl.ciecierski.sbh.ui.fotografie.Fotografia6Activity;
+import pl.ciecierski.sbh.ui.media.Film1Activity;
+import pl.ciecierski.sbh.ui.media.Fotografia1Activity;
+import pl.ciecierski.sbh.ui.media.Fotografia2Activity;
+import pl.ciecierski.sbh.ui.media.Fotografia3Activity;
+import pl.ciecierski.sbh.ui.media.Fotografia4Activity;
+import pl.ciecierski.sbh.ui.media.Fotografia5Activity;
+import pl.ciecierski.sbh.ui.media.Fotografia6Activity;
+import pl.ciecierski.sbh.ui.media.Muzyka1Activity;
 
 import static pl.ciecierski.sbh.sections.RandomDialogBySections.showRandomDialogBySection;
 import static pl.ciecierski.sbh.sections.Sections.RETURN_TO_POLAND;
@@ -125,26 +127,15 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
                         String txtD;
                         if (task != null) {
 
-
 //                            jeśli brak permissions to się wywala
                             try {
                                 txtD = "Odległość ";
-                                txtD += String.valueOf((int) task.getResult().distanceTo(locationBibl));
+                                txtD += String.valueOf((int) task.getResult().distanceTo(locationMWL));
                                 txtD += " m";
-                                MainActivity.txtBibl = txtD;
+                                MainActivity.txtMWL = txtD;
                             } catch (RuntimeException e) {
-                                txtD = "Odległość: brak danych";
-                                MainActivity.txtBibl = txtD;
-                            }
-
-                            try {
-                                txtD = "Odległość ";
-                                txtD += String.valueOf((int) task.getResult().distanceTo(locationIPG));
-                                txtD += " m";
-                                MainActivity.txtIPG = txtD;
-                            } catch (RuntimeException e) {
-                                txtD = "Odległość: brak danych";
-                                MainActivity.txtIPG = txtD;
+                                txtD = "Udziel aplikacji dostępu do używania lokalizacji!";
+                                MainActivity.txtMWL = txtD;
                             }
 
                             try {
@@ -159,12 +150,22 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
 
                             try {
                                 txtD = "Odległość ";
-                                txtD += String.valueOf((int) task.getResult().distanceTo(locationMWL));
+                                txtD += String.valueOf((int) task.getResult().distanceTo(locationIPG));
                                 txtD += " m";
-                                MainActivity.txtMWL = txtD;
+                                MainActivity.txtIPG = txtD;
                             } catch (RuntimeException e) {
                                 txtD = "Odległość: brak danych";
-                                MainActivity.txtMWL = txtD;
+                                MainActivity.txtIPG = txtD;
+                            }
+
+                            try {
+                                txtD = "Odległość ";
+                                txtD += String.valueOf((int) task.getResult().distanceTo(locationBibl));
+                                txtD += " m";
+                                MainActivity.txtBibl = txtD;
+                            } catch (RuntimeException e) {
+                                txtD = "Odległość: brak danych";
+                                MainActivity.txtBibl = txtD;
                             }
 
                         }
@@ -242,7 +243,6 @@ todo utworzyć case do menu - wybór tematu/działu
                 editorFRMA.putBoolean(FRMA, false);
                 editorFRMA.apply();
 
-
             } else if (firstRunMainActivity || !isRun) {
                 title = "Sekrety Bydgoskiej Historii";
                 msg = "Aplikacja ma za zadanie przybliżyć ważne wydarzenia z życia Bydgoszczy, które przez lata popadły w zapomnienie. Piękna historia miasta, nietuzinkowe postaci – przyjrzyj się uważnie tym unikalnym zdjęciom.\n\n" + "\t\t\t\t\t\t\t\tKrzysztof Drozdowski";
@@ -299,5 +299,15 @@ todo utworzyć case do menu - wybór tematu/działu
         isRun = true;
         startActivity(new Intent(this, Fotografia6Activity.class));
     }
+
+    public void onClickBtnFilm1(View view) {
+        isRun = true;
+        startActivity(new Intent(this, Film1Activity.class));
+    }
+    public void onClickBtnMuzyka1(View view) {
+        isRun = true;
+        startActivity(new Intent(this, Muzyka1Activity.class));
+    }
+
 
 }

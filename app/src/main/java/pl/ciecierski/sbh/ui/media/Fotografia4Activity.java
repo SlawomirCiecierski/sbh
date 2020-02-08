@@ -1,4 +1,4 @@
-package pl.ciecierski.sbh.ui.fotografie;
+package pl.ciecierski.sbh.ui.media;
 
 import androidx.appcompat.app.AppCompatActivity;
 

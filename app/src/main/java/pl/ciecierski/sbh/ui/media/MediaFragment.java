@@ -1,4 +1,4 @@
-package pl.ciecierski.sbh.ui.fotografie;
+package pl.ciecierski.sbh.ui.media;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 
 import pl.ciecierski.sbh.R;
 
-public class FotografieFragment extends Fragment {
+public class MediaFragment extends Fragment {
 
 
 
@@ -19,7 +19,7 @@ public class FotografieFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
 
-//todo po załadowaniu statycznym layoutu fragment_fotografie
+//todo po załadowaniu statycznym layoutu fragment_media
 // (posłużyć się navigation) tu można zmienić na inny
 //        fragment np:
 //        return inflater.inflate(R.layout.fragment_muzea, container, false);
@@ -36,7 +36,7 @@ public class FotografieFragment extends Fragment {
 
 
 
-        return inflater.inflate(R.layout.fragment_fotografie, container, false);
+        return inflater.inflate(R.layout.fragment_media, container, false);
 
     }
 
