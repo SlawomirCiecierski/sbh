@@ -11,14 +11,15 @@ import androidx.fragment.app.Fragment;
 
 import pl.ciecierski.sbh.R;
 
-public class MediaFragment extends Fragment {
+public class MediaFragment2 extends Fragment {
 
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.fragment_media, container, false);
+
+        return inflater.inflate(R.layout.fragment2_media, container, false);
 
     }
 

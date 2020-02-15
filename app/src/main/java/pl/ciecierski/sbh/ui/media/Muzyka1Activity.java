@@ -1,6 +1,8 @@
 package pl.ciecierski.sbh.ui.media;
 
+
 import android.os.Bundle;
+
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,15 +17,16 @@ public class Muzyka1Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_filmormusic);
-        WebView webView = findViewById(R.id.webviewfilmormusic);
+        setContentView(R.layout.activity_film_or_music);
+        WebView webView = findViewById(R.id.webview_film_or_music);
         webView.loadUrl("https://soundcloud.com/ciecierski/sets/bydgoszcz100");
     }
 
+
     @Override
-    protected void onStop() {
-        super.onStop();
-        setContentView(R.layout.activity_main);
+    protected void onRestart() {
+        super.onRestart();
+        this.onBackPressed();
     }
 
 }

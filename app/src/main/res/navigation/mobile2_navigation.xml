@@ -12,16 +12,16 @@
 
     <fragment
         android:id="@+id/nav_fotografie"
-        android:name="pl.ciecierski.sbh.ui.media.MediaFragment"
+        android:name="pl.ciecierski.sbh.ui.media.MediaFragment2"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_media" />
+        tools:layout="@layout/fragment2_media" />
 
 
     <fragment
         android:id="@+id/nav_ciekawostki"
-        android:name="pl.ciecierski.sbh.ui.ciekawostki.CiekawostkiFragment"
+        android:name="pl.ciecierski.sbh.ui.ciekawostki.CiekawostkiFragment2"
         android:label="@string/menu_ciekawostki"
-        tools:layout="@layout/fragment_ciekawostki" />
+        tools:layout="@layout/fragment2_ciekawostki" />
 
 
     <fragment

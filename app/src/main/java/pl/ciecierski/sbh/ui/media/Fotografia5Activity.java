@@ -17,7 +17,4 @@ public class Fotografia5Activity extends AppCompatActivity {
         setContentView(R.layout.activity_fotografia5);
     }
 
-    public void onClickLargeImage(View view){
-        startActivity(new Intent(this, MainActivity.class));
-    }
 }

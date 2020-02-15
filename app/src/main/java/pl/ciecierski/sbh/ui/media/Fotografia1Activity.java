@@ -20,9 +20,6 @@ public class Fotografia1Activity extends AppCompatActivity {
         isRun=true;
     }
 
-    public void onClickLargeImage(View view){
-        startActivity(new Intent(this, MainActivity.class));
-    }
 
     @Override
     protected void onStop() {

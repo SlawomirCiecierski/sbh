@@ -20,7 +20,6 @@ import static pl.ciecierski.sbh.R.id.mo_distance;
 import static pl.ciecierski.sbh.R.id.ipg_distance;
 
 
-
 public class MuzeaFragment extends Fragment {
 
 

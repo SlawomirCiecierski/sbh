@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_witaj"
+        android:orderInCategory="100"
+        android:title="czy wiesz, że.."
+        app:showAsAction="always">
+
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/action_witaj2"-->
+<!--                android:orderInCategory="100"-->
+<!--                android:title="Bydgoszcz 1920"-->
+<!--                app:showAsAction="always" />-->
+
+<!--            <item-->
+<!--                android:id="@+id/action_witaj3"-->
+<!--                android:orderInCategory="100"-->
+<!--                android:title="Następne"-->
+<!--                app:showAsAction="always" />-->
+
+<!--        </menu>-->
+    </item>
+
+
+
+</menu>

@@ -44,7 +44,7 @@ import static pl.ciecierski.sbh.sections.Sections.RETURN_TO_POLAND;
 import static pl.ciecierski.sbh.ui.toasts.VersionToast.showVersionToast;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity {
 
     public final static String FRAI = "first_run_after_installation";
     public final static String FRMA = "first_run_mainactivity";
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity2_main);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -136,7 +136,7 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
                                 txtD += " m";
                                 MainActivity.txtMWL = txtD;
                             } catch (RuntimeException e) {
-    txtD = "Do prawidłowego odczytu odległości aplikacja wymaga dostępu do lokalizacji Twojego urządzenia!";
+                                txtD = "Do prawidłowego odczytu odległości aplikacja wymaga dostępu do lokalizacji Twojego urządzenia!";
                                 MainActivity.txtMWL = txtD;
                             }
 
@@ -213,15 +213,10 @@ todo utworzyć case do menu - wybór tematu/działu
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    protected void onRestart() {
-//todo tutaj destination powinien być fragment media
-        super.onRestart();
-    }
 
     /*
-        Dialogs implementation start
-         */
+    Dialogs implementation start
+     */
     private class FirstWelcomeDialog {
         void showFirstWelcomeDialog() {
 //            wykorzystanie shared preferences do wykrycia pierwszego użycia aplikacji
@@ -237,7 +232,7 @@ todo utworzyć case do menu - wybór tematu/działu
                 title = "Twój pierwszy raz!";
                 msg = "Cieszymy się, że zdecydowałeś się skorzystać z tej aplikacji.";
                 msg += "\nAplikacja ma za zadanie przybliżyć ważne wydarzenia z życia Bydgoszczy, które przez lata popadły w zapomnienie. Piękna historia miasta, nietuzinkowe postaci – przyjrzyj się uważnie tym unikalnym zdjęciom: to wszystko w aplikacji pod nazwą: Sekrety Bydgoskiej Historii.\n\n" + "\t\t\t\t\t\t\t\tKrzysztof Drozdowski";
-                AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity.this);
+                AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity2.this);
                 dialogBuilder.setTitle(title);
                 dialogBuilder.setMessage(msg);
                 dialogBuilder.show();
@@ -253,7 +248,7 @@ todo utworzyć case do menu - wybór tematu/działu
             } else if (firstRunMainActivity || !isRun) {
                 title = "Sekrety Bydgoskiej Historii";
                 msg = "Aplikacja ma za zadanie przybliżyć ważne wydarzenia z życia Bydgoszczy, które przez lata popadły w zapomnienie. Piękna historia miasta, nietuzinkowe postaci – przyjrzyj się uważnie tym unikalnym zdjęciom, obejrzyj filmy i wysłuchaj muzyki.\n\n" + "\t\t\t\t\t\t\t\tKrzysztof Drozdowski";
-                AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity.this);
+                AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity2.this);
                 dialogBuilder.setTitle(title);
                 dialogBuilder.setMessage(msg);
                 dialogBuilder.show();
@@ -268,7 +263,7 @@ todo utworzyć case do menu - wybór tematu/działu
     private class HistoricalDialog {
         void showCzyWieszZe() {
 
-            AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity.this);
+            AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity2.this);
             dialogBuilder.setTitle("Czy wiesz, że..");
             dialogBuilder.setMessage(showRandomDialogBySection(RETURN_TO_POLAND));
             dialogBuilder.setIconAttribute(android.R.attr.alertDialogIcon);

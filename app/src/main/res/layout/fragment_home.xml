@@ -1,42 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/tlo">
+    android:background="@drawable/tlo"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.home.HomeFragment">
 
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:adjustViewBounds="true"
-        android:contentDescription="@string/photo_1"
-        android:soundEffectsEnabled="true"
-        android:src="@drawable/ico_herb6"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/text_home_author"
-        app:layout_constraintEnd_toEndOf="@id/text_home_author"
-        app:layout_constraintStart_toStartOf="@id/text_home_author" />
-
-    <TextView
-        android:id="@+id/text_home_author"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="20dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
 
-        android:lineSpacingMultiplier="1"
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
 
-        android:text="@string/text_home"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:visibility="visible" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="@string/text_home"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

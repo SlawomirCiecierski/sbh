@@ -18,7 +18,7 @@ class RandomTextFromSection {
                     to.add("1 kwietnia 1920 roku włączono do Bydgoszczy Wilczak Dolne – obecnie Siernieczek.");
                     to.add("1 kwietnia 1920 roku włączono do Bydgoszczy Kapuściska Wielkie – obecnie Zimne Wody.");
                     to.add("Okole to dawna nazwa Wyspy Młyńskiej - sprzed 1 kwietnia 1920r.");
-                    to.add("845 hektarów zamjowała Bydgoszcz przed 1 kwietnia 1920r.");
+                    to.add("845 hektarów zajmowała Bydgoszcz przed 1 kwietnia 1920r.");
                     to.add("Po dołączeniu przedmieść po 1 kwietnia 1920 obszar Bydgoszczy powiększył się ośmiokrotnie i wynosił 6523,65 hektarów");
                     to.add("Obecnie w Bydgoszczy jest 31 parków o łącznej powierchni ponad 876 hektarów");
                     to.add("Pierwsza pisemna wzmianka o Bydgoszczy - 1238r. Prawa miejskie - 1346r.");
