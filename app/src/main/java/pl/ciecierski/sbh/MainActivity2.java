@@ -2,8 +2,11 @@
 package pl.ciecierski.sbh;
 
 import android.app.AlertDialog;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -20,6 +23,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -39,6 +44,7 @@ import pl.ciecierski.sbh.ui.media.Muzyka1Activity2;
 
 import static pl.ciecierski.sbh.sections.RandomDialogBySections.showRandomDialogBySection;
 import static pl.ciecierski.sbh.sections.Sections.BYDGOSZCZ_1920;
+import static pl.ciecierski.sbh.sections.Sections.BYDGOSZCZ_1945;
 import static pl.ciecierski.sbh.ui.toasts.VersionToast.showVersionToast;
 
 
@@ -47,6 +53,7 @@ public class MainActivity2 extends AppCompatActivity {
     public final static String FRAI = "first_run_after_installation";
     public final static String FRMA = "first_run_mainactivity";
     public static boolean isRun;
+    private static final int notification2Id = 1963;
     private AppBarConfiguration mAppBarConfiguration2;
     public static String txtBibl;
     public static String txtMO;
@@ -60,6 +67,7 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        createNotificationChannel2();
         setContentView(R.layout.activity2_main);
 
 //       Toolbar toolbar = findViewById(R.id.toolbar2);
@@ -176,10 +184,9 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
                     }
                 });
 
-        /*
-        przy pierwszym użyciu aplikacji (po zainstalowaniu) wyświetla komunikat powitalny
-         */
-//        new FirstWelcomeDialog().showFirstWelcomeDialog();
+
+        //        losowe Notification z z Bydgoszcz1945
+        startNotification1(showRandomDialogBySection(BYDGOSZCZ_1945));
     }
 
 
@@ -270,16 +277,37 @@ todo utworzyć case do menu - wybór tematu/działu
         }
     }
 
-    private class HistoricalDialog {
-        void showCzyWieszZe() {
 
-            AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity2.this);
-            dialogBuilder.setTitle("Czy wiesz, że..");
-            dialogBuilder.setMessage(showRandomDialogBySection(BYDGOSZCZ_1920));
-            dialogBuilder.setIconAttribute(android.R.attr.alertDialogIcon);
-            dialogBuilder.show();
+    private void createNotificationChannel2() {
+        // Create the NotificationChannel, but only on API 26+ because
+        // the NotificationChannel class is new and not in the support library
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = getString(R.string.channel2_name);
+            String description = getString(R.string.channel2_description);
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel channel = new NotificationChannel("MY_CHANNEL2", name, importance);
+            channel.setDescription(description);
+            // Register the channel with the system; you can't change the importance
+            // or other notification behaviors after this
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+
+            try {
+                notificationManager.createNotificationChannel(channel);
+            } catch (NullPointerException e) {
+// nothing
+            }
         }
+    }
 
+    public void startNotification1(String ciekawostka) {
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "MY_CHANNEL")
+                .setSmallIcon(R.drawable.ico_herb6)
+                .setContentTitle("Bydgoszcz 1945: czy wiesz, że...")
+                .setContentText(ciekawostka)
+                .setStyle(new NotificationCompat.BigTextStyle().bigText(ciekawostka))
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
+        notificationManager.notify(notification2Id, builder.build());
     }
 
     public void onClickSmallFotografia22(View view) {
