@@ -234,74 +234,74 @@
 
 
 
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="top"-->
-<!--            android:gravity="center_horizontal"-->
-<!--            android:text="@string/film_1"-->
-<!--            android:textSize="24sp" />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal"
+            android:text="@string/film_1"
+            android:textSize="24sp" />
 
-<!--        <Button-->
-<!--            android:id="@+id/film1"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="fill_horizontal"-->
-<!--            android:layout_margin="20dp"-->
-<!--            android:background="@color/design_default_color_background"-->
-<!--            android:onClick="onClickBtnFilm1"-->
-<!--            android:text="@string/description_film1"-->
-<!--            android:textColor="@color/colorAccent" />-->
+        <Button
+            android:id="@+id/film1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="20dp"
+            android:background="@color/design_default_color_background"
+            android:onClick="onClickBtnFilm21"
+            android:text="@string/description_film21"
+            android:textColor="@color/colorAccent" />
 
-<!--        <Button-->
-<!--            android:id="@+id/film2"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="fill_horizontal"-->
-<!--            android:layout_margin="20dp"-->
-<!--            android:background="@color/design_default_color_background"-->
-<!--            android:onClick="onClickBtnFilm2"-->
-<!--            android:text="@string/description_film2"-->
-<!--            android:textColor="@color/colorAccent" />-->
+        <Button
+            android:id="@+id/film2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="20dp"
+            android:background="@color/design_default_color_background"
+            android:onClick="onClickBtnFilm22"
+            android:text="@string/description_film22"
+            android:textColor="@color/colorAccent" />
 
-<!--        <Button-->
-<!--            android:id="@+id/film3"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="fill_horizontal"-->
-<!--            android:layout_margin="20dp"-->
-<!--            android:background="@color/design_default_color_background"-->
-<!--            android:onClick="onClickBtnFilm3"-->
-<!--            android:text="@string/description_film3"-->
-<!--            android:textColor="@color/colorAccent" />-->
+        <Button
+            android:id="@+id/film3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="20dp"
+            android:background="@color/design_default_color_background"
+            android:onClick="onClickBtnFilm23"
+            android:text="@string/description_film23"
+            android:textColor="@color/colorAccent" />
 
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="top"-->
-<!--            android:gravity="center_horizontal"-->
-<!--            android:text="@string/muzyka_1"-->
-<!--            android:textSize="24sp" />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal"
+            android:text="@string/muzyka_1"
+            android:textSize="24sp" />
 
-<!--        <Button-->
-<!--            android:id="@+id/muzyka1"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="fill_horizontal"-->
-<!--            android:layout_margin="20dp"-->
-<!--            android:background="@color/design_default_color_background"-->
-<!--            android:onClick="onClickBtnMuzyka1"-->
-<!--            android:text="@string/description_muzyka1"-->
-<!--            android:textColor="@color/colorAccent" />-->
+        <Button
+            android:id="@+id/muzyka1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="20dp"
+            android:background="@color/design_default_color_background"
+            android:onClick="onClickBtnMuzyka21"
+            android:text="@string/description_muzyka21"
+            android:textColor="@color/colorAccent" />
 
-<!--        <ImageView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="90dp"-->
-<!--            android:layout_gravity="center_horizontal"-->
-<!--            android:contentDescription="@string/photo_1"-->
-<!--            android:soundEffectsEnabled="true"-->
-<!--            android:src="@drawable/ico_herb6"-->
-<!--            android:visibility="visible" />-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
 
     </LinearLayout>
 

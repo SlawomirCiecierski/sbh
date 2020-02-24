@@ -2,11 +2,16 @@
     <string name="app_name">Sekrety bydgoskiej historii</string>
     <string name="nav_header_title">Sekrety bydgoskiej historii</string>
     <string name="nav_header_subtitle">100 lat Bydgoszczy w Polsce </string>
-    <string name="nav_header2_subtitle">Wyzwolenie Bydgoszczy 1945 </string>
+    <string name="nav_header2_subtitle">Wyzwolenie Bydgoszczy 1945 r. </string>
+<!--    Notification data-->
+    <string name="channel1_name">MY_CHANNEL1</string>
+    <string name="channel1_description">Sekrety Bydgoskiej Historii</string>
+    <string name="channel2_name">MY_CHANNEL2</string>
+    <string name="channel2_description">Sekrety Bydgoskiej Historii</string>
+<!--    -->
     <string name="nav_header_desc">Herb Bydgoszczy</string>
     <string name="action_czy_wiesz_ze">Czy wiesz, że..</string>
     <string name="przydatne_separator">Przydatne</string>
-
     <string name="menu_home">Zamiast wstępu</string>
     <string name="menu_gallery">Media</string>
     <string name="menu_ciekawostki">Ciekawostki</string>
@@ -21,11 +26,8 @@
     <string name="film_1">Filmy</string>
     <string name="muzyka_1">Muzyka</string>
     <string name="herb">Herb Bydgoszczy</string>
-
     <string name="ciekawostka_1">2 sierpnia 1914r. w Bydgoszczy ogłoszono stan wojenny. Na lazarety zamieniono większość dużych obiektów w mieście, takich jak choćby sale gimnastyczne. Miesiąc od rozpoczęcia wojny w mieście istniało 10 lazaretów. Do końca 1914r. ten stan powiększono o 100 %, w których to lazaretach leczono jednocześnie nawet 3000 rannych żołnierzy.</string>
-
     <string name="ciekawostka_2">Przygotowania do powitania Wojska Polskiego w Bydgoszczy  trwały już od lipca 1919 roku. Prace dekoracyjne w mieście zlecono bydgoskiemu architektowi Teofilowi Biernackiemu.</string>
-
     <string name="ciekawostka_3">Przed 1 kwietnia 1920 miasto składało się z pięciu zasadniczych części:
         \n - <b>Stare Miasto:</b> Miasto, Zamek, Wyspa Młyńska (dawniej Okole), Przedmieście Kujawskie;
         \n - <b>Część północna:</b> Ludwikowo (Jachcice), Stacja kolejowa, Bocianowo I (Wielkie), Bocianowo II (Małe), Przedmieście Gdańskie, Grodztwo Zachodnie, Grodztwo Wschodnie, Cmentarze północne, Koszary północne, Koszary leśne, Szkoła wojenna, Boisko sportowe;
@@ -33,38 +35,24 @@
         \n - <b>Część południowa:</b> Szwederowo, Nowy Dwór, Bielice;
         \n - <b>Część wschodnia:</b> Przedmieście Toruńskie, Probostwo, Wzgórze Wolności, Żupy.
 \n \nRejony o największej powierzchni to: Grodztwo Wschodnie – 145 ha,  Ludwikowo – 63,5 ha, Bocianowo I (Wielkie) – 60 ha.</string>
-
     <string name="ciekawostka_4">Nocą z 10 na 11 listopada 1918r. w mieście doszło do starcia grupki niemieckich żołnierzy z patrolem Rady Żołnierskiej. Incydent zakończył się kilkoma ofiarami śmiertelnymi i kilkoma rannymi. Bunt wśród jednostek bydgoskiego garnizonu rozgorzał najpierw w 14 Pułku Piechoty im. Hrabiego von Schwerin (3 Pomorski).</string>
-
     <string name="ciekawostka_4a">Naczelna Rada Ludowa na miasto Bydgoszcz została powołana 16 listopada 1918 roku. Prezesem został wybrany Jan Biziel, sekretarzem Jan Teska, skarbnikiem Józef Milchert, a członkami zarządu Władysław Kużaj i Antoni Czarnecki.</string>
-
     <string name="ciekawostka_4b">"Od 18 stycznia 1919r. do 21 stycznia 1920 roku trwała Konferencja Pokojowa w Paryżu.
         \n18 lutego 1919r. doszło do potyczki pod Rynarzewem, która zakończyła się zdobyciem niemieckiego pociągu pancernego Panzerzug 22, który następnie został przemianowany na „Danuta”.
         \n20 maja 1919r. do restauracji Sikorskiego znajdującej się przy ul. Gdańskiej wtargnęli członkowie Grenzschutzu i obrzucili granatami znajdujących się we wnętrzu zebranych Polaków.
             \n30 maja 1919r. trzech żołnierzy Grenzschutzu wtargnęło na teren kościoła farnego i obrzucili kamieniami grotę Matki Boskiej z Lourdes.
             \n25 listopada 1919r. podpisano umowę o wycofaniu wojsk z odstąpionych obszarów oraz przekazaniu w ręce polskie zarządu cywilnego nad tymi obszarami.</string>
-
     <string name="ciekawostka_5">Przygotowania do powitania Wojska Polskiego w Bydgoszczy  trwały już od lipca 1919 roku. Prace dekoracyjne w mieście zlecono bydgoskiemu architektowi Teofilowi Biernackiemu.</string>
-
     <string name="ciekawostka_6">W nocy z 19 na 20 stycznia 1920r. przemalowano w biało-czerwone barwy wszystkie budki strażnicze stojące przy bramach koszarowych i ważniejszych wojskowych obiektach. Środki na zakup farby pochodziły z licznych zbiórek funduszy, w których hojnie uczestniczyli mieszkańcy Bydgoszczy.</string>
-
     <string name="ciekawostka_7">W bardzo krótkim czasie Bydgoszcz z typowo pruskiego miasta przerodziła się w pełnoprawną polską metropolię. Jeszcze dziesięć lat wcześniej Bydgoszcz była zamieszkiwana przez 19 % Polaków. Według danych z przełomu 1928/1929 r. Polacy stanowili 92% populacji miasta.</string>
-
     <string name="ciekawostka_8">Bydgoskie więzienie zostało przejęte przez podprokuratora przy Sądzie Okręgowym Jarosława Czarlińskiego oraz prokuratora krajowego Alfreda Jossè.</string>
-
     <string name="ciekawostka_9">Z gabinetu przeznaczonego dla Prezydenta usunięto portret Fryderyka II i zawieszono obraz przedstawiający poznański ratusz. Oczywiście uczyniono to z powodu braku portretów polskich przywódców, a nie z uwielbienia do Poznania.</string>
-
     <string name="ciekawostka_10">20 stycznia 1920 roku w godzinach przedpołudniowych po ponad wiekowej niewoli w granice miasta wkroczyli pierwsi polscy żołnierze. Na Stary Rynek oddział ppłk. Witolda Butlera  wkroczył wraz z 3 szwadronem 2 Pułku Ułanów Wielkopolskich pod dowództwem rtm. Stanisława Zakrzewskiego  punktualnie o godz. 12.00. 22 stycznia 1920r. po uroczystościach na Rynku odbyła się defilada wojsk ulicą Gdańską przed generałem Muśnickim, który stał na placu Wolności (Weltziena) w otoczeniu swego sztabu i licznej świty.</string>
-
     <string name="ciekawostka_21">W celu obrony Bydgoszczy sformowano zgrupowanie „Gneisenau”. W jego skład weszły stacjonujące w Bydgoszczy Szkoła Zwiadu i Kawalerii Bydgoszcz (Aufklärungs und Kavallerieschule Bromberg), wystawiona jako Alarmowy Pułk Wolffien oraz Szkoła Obrony Gazowej Bydgoszcz 2 (Heeresgasschutzschule 2 Bromberg). Alarmowy Pułk Wolffien w sile ok. 600 żołnierzy składał się z 2 Radfahrschwadron, 1 schwere Schwadron i 1 Offizierbewerber Schwadron (OB Schwadron).</string>
-
     <string name="ciekawostka_22">Operacja „wiślańsko-odrzańska” jak została nazwana w sztabie Naczelnego Dowództwa Armii Czerwonej rozpoczęła się 12 stycznia 1945 r. Wojska Sowieckie uformowano w dwa fronty, które odpowiadały niemieckim Grupom Armii: 1 Front Białoruski oraz 1 Front Ukraiński. Oba fronty były wspomagane przez polskie jednostki z 1 i 2 Armii Wojska Polskiego. Rosjanie przyjęli prostą taktykę, którą umożliwiała im spora przewaga w sprzęcie i zasobach ludzkich. Silniejsze zgrupowania przeciwnika okrążano prąc dalej na zachód i licząc na ich poddanie się, wynikające z beznadziejnej sytuacji, bądź powolną likwidację w późniejszym terminie.</string>
-
     <string name="ciekawostka_23">W leżącym po wschodniej stronie miasta nieodległym Fordonie znajdowała się dodatkowo słaba, bo w sile niepełnego batalionu Szkoła Walki 2 Armii (Armeewaffenschule der 2. Armee) pod dowództwem gen. Rudolfa Noacka.</string>
-
     <string name="ciekawostka_24">Rankiem 23 stycznia Rosjanie zajęli Mroczę na północ od Nakła. Jak się okazało, był to sukces krótkotrwały gdyż miasto w trakcie dwugodzinnej walki zostało odbite przez 15 batalion fizylierów Waffen-SS oraz II batalion 34 Pułku Grenadierów Waffen-SS, wchodzącego w skład podążającej z Bytomia 15 Dywizji Grenadierów Waffen-SS. Straty Rosjan były znaczne. Odnotowano śmierć 30 oraz wzięcie do niewoli 120 żołnierzy przy swoich stratach w postaci zabitych i rannych 14 żołnierzy.</string>
-
-
+    <string name="ciekawostka_25">Rotmistrz Hans Roggemann ze Szkoły Zwiadu i Kawalerii. Dowodził oddziałem broniącym dojścia do miasta.</string>
 
     <string name="mwl_title">Muzeum Wojsk Lądowych</string>
     <string name="mwl_ulica">\nul. Czerkaska 2</string>
@@ -84,21 +72,14 @@
     <string name="bibl_tel"> tel. 523 399 250\n\n</string>
     <string name="version">Sekrety Bydgoskiej Historii wersja 1.0.5</string>
     <string name="distance">-</string>
-
-
     <string name="description_developer_android">\n<b>Sławomir Ciecierski</b> - kierownik projektu, programista Java, kompozytor. Wersja aplikacji na Android.\n\n </string>
-
     <string name="description_developer_ios">\n<b>Mateusz Szafraniec</b> - programista aplikacji mobilnych. Wersja aplikacji na iOS.\n\n
     \nZespół testerów w składzie:\n</string>
-
-    <string name="description_tester1">
-        \n1. <b>Konrad Stankiewicz</b>;\n
-        </string>
+    <string name="description_tester1">\n1. <b>Konrad Stankiewicz;\n</b></string>
     <string name="description_tester2">\n2. <b>Paweł Cymbaluk;\n</b></string>
     <string name="description_tester3">\n3. <b>Łukasz Kamiński;\n</b></string>
     <string name="description_tester4">\n4. <b>Ewelina Sierżańska;</b></string>
     <string name="description_tester5">\n5. <b>Marcin Hyba;</b> \n\n\n</string>
-
     <string name="description_author">\n<b>Krzysztof Drozdowski</b> - urodził się 15.03.1985 roku w Bydgoszczy. Historyk, społecznik, działacz na rzecz podniesienia świadomości historycznej w Bydgoszczy i regionie.
         Członek Towarzystwa Miłośników Miasta Bydgoszczy. Doprowadził do wznowienia przez IPN śledztwa w sprawie fordońskiej Doliny Śmierci.\n
         \nJest autorem publikacji:
@@ -118,7 +99,6 @@
         \n- <i>16 Pułk Ułanów Wielkopolskich im. gen. dyw. Gustawa Orlicz-Dreszera 1918-1939</i>
         \n- <i>Świat odosobniony. Bydgoska służba penitencjarna w latach 1920-1939.</i>\n
         \nPonadto opublikował ponad 40 artykułów naukowych i popularnonaukowych.\n\n</string>
-
     <string name="description_photo_1">Powitanie pierwszych oddziałów wojska polskiego po wkroczeniu do miasta w dniu 20 stycznia 1920r.  Na środku stoi ppłk Witold Butler dowódca oddziału saperów oraz pierwszy wojskowy komendant miasta. Przed nim stoją przedstawiciele władz miasta i Podkomisariatu Naczelnej Rady Ludowej.</string>
     <string name="description_photo_2">Pierwsze oddziały 15 Dywizji Piechoty oraz 16 Pułku Ułanów Wielkopolskich po wkroczeniu na płytę Starego Rynku.</string>
     <string name="description_photo_3">Orkiestra 16 Pułku Ułanów Wielkopolskich podczas defilady na ul. Gdańskiej w dniu 22 stycznia 1920 roku. Defiladę przyjmował dowódca Frontu Wielkopolskiego gen. Józef Dowbor-Muśnicki.</string>
@@ -126,7 +106,6 @@
     <string name="description_photo_5">Jan Biziel podczas przemówienia do zebranych mieszkańców miasta w trakcie powitania gen. Józefa Dowbora-Muśnickiego w dniu 22 stycznia 1920r.</string>
     <string name="description_photo_6">Generał Józef Dowbor-Muśnicki w trakcie przemówienia po mszy św. polowej odprawionej na płycie Starego Rynku w dniu 22 stycznia 1920r.
         \n \n \n<i>Zdjęcia pochodzą z Muzeum Wojsk Lądowych.</i> \n </string>
-
     <string name="description_photo_21a">W  skład zgrupowania „Gneisenau” weszły stacjonujące w Bydgoszczy Szkoła Zwiadu i Kawalerii Bydgoszcz (Aufklärungs und Kavallerieschule Bromberg), wystawiona jako Alarmowy Pułk Wolffien oraz Szkoła Obrony Gazowej Bydgoszcz 2 (Heeresgasschutzschule 2 Bromberg). Alarmowy Pułk Wolffien w sile ok. 600 żołnierzy składał się z 2 Radfahrschwadron, 1 schwere Schwadron i 1 Offizierbewerber Schwadron (OB Schwadron).
         </string>
     <string name="description_photo_21b">
@@ -136,24 +115,24 @@ W składzie zgrupowania znajdowały się również:
 \n- Ersatz Grenadier Kompanie Feldernhalle.
 \n- Polizei Kompanie.
 \nW leżącym po wschodniej stronie miasta nieodległym Fordonie znajdowała się dodatkowo słaba, bo w sile niepełnego batalionu Szkoła Walki 2 Armii (Armeewaffenschule der 2. Armee) pod dowództwem gen. Rudolfa Noacka (fotografia 1).</string>
-
     <string name="description_photo_22">Na przedpolu miasta wykonano dwie prowizoryczne linie okopów. W ich powstaniu udział mieli mieszkańcy Bydgoszczy, którzy byli wysyłani w teren do przymusowych prac ziemnych. Już w samym mieście umocniono niektóre obiekty, jako punkty oporu. Wśród nich znalazły się zabudowania Rzeźni Miejskiej, Teatr Miejski, Szpital Garnizonowy i gmach Dyrekcji Kolei. Wykonano również zaminowania niektórych obiektów oraz mostów, w tym mostu przez Wisłę w Fordonie. Jego zniszczenie zależało od bezpośredniej decyzji gen. Heinza Guderiana ówczesnego  Szefa Sztabu  Naczelnego Dowództwa Wojsk Lądowych.</string>
-
     <string name="description_photo_23">Operacja wiślańsko-odrzańska jak została nazwana w sztabie Naczelnego Dowództwa Armii Czerwonej rozpoczęła się 12 stycznia 1945 r. Wojska Sowieckie uformowano w dwa fronty, które odpowiadały niemieckim Grupom Armii: 1 Front Białoruski oraz 1 Front Ukraiński. Oba fronty były wspomagane przez polskie jednostki z 1 i 2 Armii Wojska Polskiego. Rosjanie przyjęli prostą taktykę, którą umożliwiała im spora przewaga w sprzęcie i zasobach ludzkich. Silniejsze zgrupowania przeciwnika okrążano prąc dalej na zachód i licząc na ich poddanie się, wynikające z beznadziejnej sytuacji, bądź powolną likwidację w późniejszym terminie.</string>
-
     <string name="description_photo_24">Pułkownik Paul Wuth musiał zareagować niemal błyskawicznie. W rejon ataku rosyjskich czołgów skierowany został Landesschützen-Bataillon 363. Pomimo iż ta jednostka nie przedstawiała większej wartości bojowej to jednak uzbrojona w pancerfausty przyczyniła się do zatrzymania natarcia niszcząc kilka czołgów radzieckich, ponosząc jedynie minimalne straty. Dodatkowo jeden z atakujących czołgów wpadł do śluzu kanału Bydgoskiego znajdującej się przy ul. Bronikowskiego.</string>
-
     <string name="description_photo_25">Rankiem 23 stycznia Rosjanie zajęli Mroczę na północ od Nakła. Jak się okazało, był to sukces krótkotrwały gdyż miasto w trakcie dwugodzinnej walki zostało odbite przez 15 batalion fizylierów Waffen-SS oraz II batalion 34 Pułku Grenadierów Waffen-SS, wchodzącego w skład podążającej z Bytomia 15 Dywizji Grenadierów Waffen-SS. Straty Rosjan były znaczne. Odnotowano śmierć 30 oraz wzięcie do niewoli 120 żołnierzy przy swoich stratach w postaci zabitych i rannych 14 żołnierzy.</string>
-
-
     <string name="description_film1">Bydgoszcz w 1920 roku</string>
     <string name="description_film2">Wkroczenie Wojska Polskiego - rekonstrukcja</string>
     <string name="description_film3">Makieta Starego Rynku w 1920 roku</string>
+    <string name="description_film21">Inscenizacja wyzwolenia</string>
+    <string name="description_film22">Defilada w 1945 roku</string>
+    <string name="description_film23">Styczniowa ofensywa 1945 r.</string>
     <string name="description_muzyka1">Bydgoszcz100 tryptyk</string>
-
+    <string name="description_muzyka21">Bydgoszcz1945</string>
     <string name="text_home">\n<i>Aplikacja ma za zadanie przybliżyć różne ważne wydarzenia z życia Bydgoszczy, które przez lata popadły w zapomnienie. Piękna historia miasta, nietuzinkowe postaci – przyjrzyj się uważnie tym unikalnym zdjęciom, obejrzyj filmy i wysłuchaj muzyki. To wszystko znajdziesz w aplikacji pod nazwą <b>Sekrety Bydgoskiej Historii</b>. Projekt będzie rozwijał się o kolejne sekrety, więc wróć tu koniecznie.
         \n \n  Krzysztof Drozdowski</i></string>
     <string name="title_activity_film1">Film1Activity</string>
     <string name="title_activity_muzyka1">Muzyka1Activity</string>
+    <string name="current_version">Wersja aplikacji: <b>1.3.29</b></string>
+
+
 
 </resources>

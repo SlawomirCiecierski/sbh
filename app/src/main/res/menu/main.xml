@@ -2,25 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_witaj"
+        android:id="@+id/action_wybierz"
         android:orderInCategory="100"
-        android:title="czy wiesz, że.."
+        android:title="Wybierz"
         app:showAsAction="always">
 
-<!--        <menu>-->
-<!--            <item-->
-<!--                android:id="@+id/action_witaj2"-->
-<!--                android:orderInCategory="100"-->
-<!--                android:title="Bydgoszcz 1920"-->
-<!--                app:showAsAction="always" />-->
+        <menu>
+            <item
+                android:id="@+id/action_wybierz1920"
+                android:orderInCategory="100"
+                android:title="Bydgoszcz 1920"
+                app:showAsAction="always" />
 
-<!--            <item-->
-<!--                android:id="@+id/action_witaj3"-->
-<!--                android:orderInCategory="100"-->
-<!--                android:title="Następne"-->
-<!--                app:showAsAction="always" />-->
+            <item
+                android:id="@+id/action_wybierz1945"
+                android:orderInCategory="100"
+                android:title="Bydgoszcz 1945"
+                app:showAsAction="always" />
 
-<!--        </menu>-->
+        </menu>
     </item>
 
 

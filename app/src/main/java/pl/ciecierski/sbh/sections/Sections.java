@@ -2,6 +2,6 @@ package pl.ciecierski.sbh.sections;
 
 public enum Sections {
 
-    RETURN_TO_POLAND, ERYGOWANIE, THIRD_SECTION, FOURTH_SECTION
+    BYDGOSZCZ_1920, BYDGOSZCZ_1945, THIRD_SECTION, FOURTH_SECTION
 
 }

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/tlo"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.home.HomeFragment2">
 
 
     <LinearLayout
@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
-            android:text="@string/nav_header_subtitle"
+            android:text="@string/nav_header2_subtitle"
             android:textSize="16sp" />
 
         <TextView

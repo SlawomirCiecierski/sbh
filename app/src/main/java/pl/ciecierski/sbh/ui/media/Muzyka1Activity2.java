@@ -2,15 +2,13 @@ package pl.ciecierski.sbh.ui.media;
 
 
 import android.os.Bundle;
-
+import android.webkit.WebView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.webkit.WebView;
-
 import pl.ciecierski.sbh.R;
 
-public class Muzyka1Activity extends AppCompatActivity {
+public class Muzyka1Activity2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +16,7 @@ public class Muzyka1Activity extends AppCompatActivity {
 
         setContentView(R.layout.activity_film_or_music);
         WebView webView = findViewById(R.id.webview_film_or_music);
-        webView.loadUrl("https://soundcloud.com/ciecierski/sets/bydgoszcz100");
+        webView.loadUrl("https://soundcloud.com/ciecierski/bydgoszcz1945");
     }
 
 

@@ -2,37 +2,37 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_home2">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="pl.ciecierski.sbh.ui.home.HomeFragment"
+        android:id="@+id/nav_home2"
+        android:name="pl.ciecierski.sbh.ui.home.HomeFragment2"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_fotografie"
+        android:id="@+id/nav_fotografie2"
         android:name="pl.ciecierski.sbh.ui.media.MediaFragment2"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment2_media" />
 
 
     <fragment
-        android:id="@+id/nav_ciekawostki"
+        android:id="@+id/nav_ciekawostki2"
         android:name="pl.ciecierski.sbh.ui.ciekawostki.CiekawostkiFragment2"
         android:label="@string/menu_ciekawostki"
         tools:layout="@layout/fragment2_ciekawostki" />
 
 
     <fragment
-        android:id="@+id/nav_autor"
-        android:name="pl.ciecierski.sbh.ui.autor.AutorFragment"
+        android:id="@+id/nav_autor2"
+        android:name="pl.ciecierski.sbh.ui.autor.AutorFragment2"
         android:label="@string/menu_author"
-        tools:layout="@layout/fragment_autor" />
+        tools:layout="@layout/fragment2_autor" />
 
     <fragment
-        android:id="@+id/nav_muzea"
-        android:name="pl.ciecierski.sbh.ui.muzea.MuzeaFragment"
+        android:id="@+id/nav_muzea2"
+        android:name="pl.ciecierski.sbh.ui.muzea.MuzeaFragment2"
         android:label="@string/menu_muzea"
         tools:layout="@layout/fragment_muzea" />
 </navigation>

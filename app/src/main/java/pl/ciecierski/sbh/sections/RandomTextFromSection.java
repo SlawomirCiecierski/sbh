@@ -9,7 +9,7 @@ class RandomTextFromSection {
         LinkedList<String> to = new LinkedList<>();
 
         switch (s) {
-            case RETURN_TO_POLAND:
+            case BYDGOSZCZ_1920:
                 if (to.size() == 0) {
                     to.add("1 kwietnia 1920 roku włączono do Bydgoszczy Wilczak Wielki – obecnie Wilczak.");
                     to.add("1 kwietnia 1920 roku włączono do Bydgoszczy Wilczak – obecnie Miedzyń");
@@ -49,7 +49,7 @@ class RandomTextFromSection {
                 int listRandomIndex = (int) (Math.random() * to.size());
                 return (listRandomIndex+1)+".\n"+to.get(listRandomIndex);
 
-            case ERYGOWANIE:
+            case BYDGOSZCZ_1945:
                 return "Erygowanie";
 
 

@@ -26,21 +26,19 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
-import pl.ciecierski.sbh.ui.media.Film1Activity;
-import pl.ciecierski.sbh.ui.media.Film2Activity;
-import pl.ciecierski.sbh.ui.media.Film3Activity;
-import pl.ciecierski.sbh.ui.media.Fotografia1Activity;
-import pl.ciecierski.sbh.ui.media.Fotografia2Activity;
-import pl.ciecierski.sbh.ui.media.Fotografia3Activity;
-import pl.ciecierski.sbh.ui.media.Fotografia4Activity;
-import pl.ciecierski.sbh.ui.media.Fotografia5Activity;
-import pl.ciecierski.sbh.ui.media.Fotografia6Activity;
-import pl.ciecierski.sbh.ui.media.Muzyka1Activity;
+import pl.ciecierski.sbh.ui.media.Film1Activity2;
+import pl.ciecierski.sbh.ui.media.Film2Activity2;
+import pl.ciecierski.sbh.ui.media.Film3Activity2;
+import pl.ciecierski.sbh.ui.media.Fotografia22Activity2;
+import pl.ciecierski.sbh.ui.media.Fotografia23Activity2;
+import pl.ciecierski.sbh.ui.media.Fotografia24Activity2;
+import pl.ciecierski.sbh.ui.media.Fotografia25Activity2;
+import pl.ciecierski.sbh.ui.media.Fotografia26Activity2;
+import pl.ciecierski.sbh.ui.media.Muzyka1Activity2;
 
 import static pl.ciecierski.sbh.sections.RandomDialogBySections.showRandomDialogBySection;
-import static pl.ciecierski.sbh.sections.Sections.RETURN_TO_POLAND;
+import static pl.ciecierski.sbh.sections.Sections.BYDGOSZCZ_1920;
 import static pl.ciecierski.sbh.ui.toasts.VersionToast.showVersionToast;
 
 
@@ -49,7 +47,7 @@ public class MainActivity2 extends AppCompatActivity {
     public final static String FRAI = "first_run_after_installation";
     public final static String FRMA = "first_run_mainactivity";
     public static boolean isRun;
-    private AppBarConfiguration mAppBarConfiguration;
+    private AppBarConfiguration mAppBarConfiguration2;
     public static String txtBibl;
     public static String txtMO;
     public static String txtIPG;
@@ -64,35 +62,39 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity2_main);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-//-----------
-//       todo toasty do modyfikacji
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showVersionToast(view);
-            }
-        });
+//       Toolbar toolbar = findViewById(R.id.toolbar2);
+//       setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
+//
+//        FloatingActionButton fab2 = findViewById(R.id.fab2);
+////-----------
+////       todo toasty do modyfikacji
+//        fab2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                showVersionToast(view);
+//            }
+//        });
+
+        DrawerLayout drawer2 = findViewById(R.id.drawer_layout2);
+        NavigationView navigationView2 = findViewById(R.id.nav_view2);
 /*
 todo w zalezności od wybranego działu skontruować menu z różnymi fragmentami
  */
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home,
-                R.id.nav_fotografie,
-                R.id.nav_ciekawostki,
-                R.id.nav_autor,
-                R.id.nav_muzea)
-                .setDrawerLayout(drawer)
+        mAppBarConfiguration2 = new AppBarConfiguration.Builder(
+                R.id.nav_home2,
+                R.id.nav_fotografie2,
+                R.id.nav_ciekawostki2,
+                R.id.nav_autor2,
+                R.id.nav_muzea2)
+                .setDrawerLayout(drawer2)
                 .build();
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-        NavigationUI.setupWithNavController(navigationView, navController);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment2);
+        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration2);
+        NavigationUI.setupWithNavController(navigationView2, navController);
+
+
 
         /*
         LOKALIZACJA
@@ -134,7 +136,7 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
                                 txtD = "Odległość ";
                                 txtD += String.valueOf((int) task.getResult().distanceTo(locationMWL));
                                 txtD += " m";
-                                MainActivity.txtMWL = txtD;
+                                MainActivity2.txtMWL = txtD;
                             } catch (RuntimeException e) {
                                 txtD = "Do prawidłowego odczytu odległości aplikacja wymaga dostępu do lokalizacji Twojego urządzenia!";
                                 MainActivity.txtMWL = txtD;
@@ -144,7 +146,7 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
                                 txtD = "Odległość ";
                                 txtD += String.valueOf((int) task.getResult().distanceTo(locationMO));
                                 txtD += " m";
-                                MainActivity.txtMO = txtD;
+                                MainActivity2.txtMO = txtD;
                             } catch (RuntimeException e) {
                                 txtD = "Odległość: brak danych";
                                 MainActivity.txtMO = txtD;
@@ -154,7 +156,7 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
                                 txtD = "Odległość ";
                                 txtD += String.valueOf((int) task.getResult().distanceTo(locationIPG));
                                 txtD += " m";
-                                MainActivity.txtIPG = txtD;
+                                MainActivity2.txtIPG = txtD;
                             } catch (RuntimeException e) {
                                 txtD = "Odległość: brak danych";
                                 MainActivity.txtIPG = txtD;
@@ -164,7 +166,7 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
                                 txtD = "Odległość ";
                                 txtD += String.valueOf((int) task.getResult().distanceTo(locationBibl));
                                 txtD += " m";
-                                MainActivity.txtBibl = txtD;
+                                MainActivity2.txtBibl = txtD;
                             } catch (RuntimeException e) {
                                 txtD = "Odległość: brak danych";
                                 MainActivity.txtBibl = txtD;
@@ -177,7 +179,7 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
         /*
         przy pierwszym użyciu aplikacji (po zainstalowaniu) wyświetla komunikat powitalny
          */
-        new FirstWelcomeDialog().showFirstWelcomeDialog();
+//        new FirstWelcomeDialog().showFirstWelcomeDialog();
     }
 
 
@@ -190,8 +192,8 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
 
     @Override
     public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        return NavigationUI.navigateUp(navController, mAppBarConfiguration)
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment2);
+        return NavigationUI.navigateUp(navController, mAppBarConfiguration2)
                 || super.onSupportNavigateUp();
     }
 
@@ -199,16 +201,24 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
     public boolean onOptionsItemSelected(MenuItem item) {
 
 
-        int id = item.getItemId();
+
 /*
 todo utworzyć case do menu - wybór tematu/działu
 1. 1920
-2. kwiecień?
+2. 1945
 3. ?
  */
-        if (id == R.id.action_witaj) {
-            new HistoricalDialog().showCzyWieszZe();
-            return true;
+        int id = item.getItemId();
+        switch (id) {
+            case R.id.action_wybierz1920:
+                isRun = true;
+                startActivity(new Intent(this, MainActivity.class));
+                return true;
+            case R.id.action_wybierz1945:
+                isRun = true;
+                startActivity(new Intent(this, MainActivity2.class));
+                return true;
+
         }
         return super.onOptionsItemSelected(item);
     }
@@ -265,61 +275,56 @@ todo utworzyć case do menu - wybór tematu/działu
 
             AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity2.this);
             dialogBuilder.setTitle("Czy wiesz, że..");
-            dialogBuilder.setMessage(showRandomDialogBySection(RETURN_TO_POLAND));
+            dialogBuilder.setMessage(showRandomDialogBySection(BYDGOSZCZ_1920));
             dialogBuilder.setIconAttribute(android.R.attr.alertDialogIcon);
             dialogBuilder.show();
         }
 
     }
 
-    public void onClickSmallFotografia1(View view) {
+    public void onClickSmallFotografia22(View view) {
         isRun = true;
-        startActivity(new Intent(this, Fotografia1Activity.class));
+        startActivity(new Intent(this, Fotografia22Activity2.class));
     }
 
-    public void onClickSmallFotografia2(View view) {
+    public void onClickSmallFotografia23(View view) {
         isRun = true;
-        startActivity(new Intent(this, Fotografia2Activity.class));
+        startActivity(new Intent(this, Fotografia23Activity2.class));
     }
 
-    public void onClickSmallFotografia3(View view) {
+    public void onClickSmallFotografia24(View view) {
         isRun = true;
-        startActivity(new Intent(this, Fotografia3Activity.class));
+        startActivity(new Intent(this, Fotografia24Activity2.class));
     }
 
-    public void onClickSmallFotografia4(View view) {
+    public void onClickSmallFotografia25(View view) {
         isRun = true;
-        startActivity(new Intent(this, Fotografia4Activity.class));
+        startActivity(new Intent(this, Fotografia25Activity2.class));
     }
 
-    public void onClickSmallFotografia5(View view) {
+    public void onClickSmallFotografia26(View view) {
         isRun = true;
-        startActivity(new Intent(this, Fotografia5Activity.class));
+        startActivity(new Intent(this, Fotografia26Activity2.class));
     }
 
-    public void onClickSmallFotografia6(View view) {
+    public void onClickBtnFilm21(View view) {
         isRun = true;
-        startActivity(new Intent(this, Fotografia6Activity.class));
+        startActivity(new Intent(this, Film1Activity2.class));
     }
 
-    public void onClickBtnFilm1(View view) {
+    public void onClickBtnFilm22(View view) {
         isRun = true;
-        startActivity(new Intent(this, Film1Activity.class));
+        startActivity(new Intent(this, Film2Activity2.class));
     }
 
-    public void onClickBtnFilm2(View view) {
+    public void onClickBtnFilm23(View view) {
         isRun = true;
-        startActivity(new Intent(this, Film2Activity.class));
+        startActivity(new Intent(this, Film3Activity2.class));
     }
 
-    public void onClickBtnFilm3(View view) {
+    public void onClickBtnMuzyka21(View view) {
         isRun = true;
-        startActivity(new Intent(this, Film3Activity.class));
-    }
-
-    public void onClickBtnMuzyka1(View view) {
-        isRun = true;
-        startActivity(new Intent(this, Muzyka1Activity.class));
+        startActivity(new Intent(this, Muzyka1Activity2.class));
     }
 
 

@@ -2,8 +2,11 @@
 package pl.ciecierski.sbh;
 
 import android.app.AlertDialog;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -20,6 +23,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -40,7 +45,7 @@ import pl.ciecierski.sbh.ui.media.Fotografia6Activity;
 import pl.ciecierski.sbh.ui.media.Muzyka1Activity;
 
 import static pl.ciecierski.sbh.sections.RandomDialogBySections.showRandomDialogBySection;
-import static pl.ciecierski.sbh.sections.Sections.RETURN_TO_POLAND;
+import static pl.ciecierski.sbh.sections.Sections.BYDGOSZCZ_1920;
 import static pl.ciecierski.sbh.ui.toasts.VersionToast.showVersionToast;
 
 
@@ -49,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
     public final static String FRAI = "first_run_after_installation";
     public final static String FRMA = "first_run_mainactivity";
     public static boolean isRun;
+    private static final int notificationId = 1964;
     private AppBarConfiguration mAppBarConfiguration;
     public static String txtBibl;
     public static String txtMO;
@@ -62,19 +68,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+createNotificationChannel();
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-//-----------
-//       todo toasty do modyfikacji
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showVersionToast(view);
-            }
-        });
+//        FloatingActionButton fab = findViewById(R.id.fab);
+////-----------
+////       todo toasty do modyfikacji
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                showVersionToast(view);
+//            }
+//        });
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -136,7 +143,7 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
                                 txtD += " m";
                                 MainActivity.txtMWL = txtD;
                             } catch (RuntimeException e) {
-    txtD = "Do prawidłowego odczytu odległości aplikacja wymaga dostępu do lokalizacji Twojego urządzenia!";
+                                txtD = "Do prawidłowego odczytu odległości aplikacja wymaga dostępu do lokalizacji Twojego urządzenia!";
                                 MainActivity.txtMWL = txtD;
                             }
 
@@ -178,6 +185,9 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
         przy pierwszym użyciu aplikacji (po zainstalowaniu) wyświetla komunikat powitalny
          */
         new FirstWelcomeDialog().showFirstWelcomeDialog();
+//        losowe Notification z z Bydgoszcz1920
+        startNotification(showRandomDialogBySection(BYDGOSZCZ_1920));
+
     }
 
 
@@ -199,17 +209,30 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
     public boolean onOptionsItemSelected(MenuItem item) {
 
 
-        int id = item.getItemId();
+//        int id = item.getItemId();
 /*
 todo utworzyć case do menu - wybór tematu/działu
 1. 1920
-2. kwiecień?
+2. 1945
 3. ?
  */
-        if (id == R.id.action_witaj) {
-            new HistoricalDialog().showCzyWieszZe();
-            return true;
+//        if (id == R.id.action_witaj) {
+////            new HistoricalDialog().showCzyWieszZe();
+//            return true;
+//        }
+
+        int id = item.getItemId();
+        switch (id) {
+            case R.id.action_wybierz1920:
+                isRun = true;
+                startActivity(new Intent(this, MainActivity.class));
+                return true;
+            case R.id.action_wybierz1945:
+                isRun = true;
+                startActivity(new Intent(this, MainActivity2.class));
+                return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -236,7 +259,7 @@ todo utworzyć case do menu - wybór tematu/działu
             if (firstRunAfterInstallation) {
                 title = "Twój pierwszy raz!";
                 msg = "Cieszymy się, że zdecydowałeś się skorzystać z tej aplikacji.";
-                msg += "\nAplikacja ma za zadanie przybliżyć ważne wydarzenia z życia Bydgoszczy, które przez lata popadły w zapomnienie. Piękna historia miasta, nietuzinkowe postaci – przyjrzyj się uważnie tym unikalnym zdjęciom: to wszystko w aplikacji pod nazwą: Sekrety Bydgoskiej Historii.\n\n" + "\t\t\t\t\t\t\t\tKrzysztof Drozdowski";
+                msg += "\nAplikacja ma za zadanie przybliżyć ważne wydarzenia z życia Bydgoszczy, które przez lata popadły w zapomnienie. Piękna historia miasta, nietuzinkowe postaci – przyjrzyj się uważnie tym unikalnym zdjęciom: to wszystko w aplikacji pod nazwą: Sekrety Bydgoskiej Historii.\n\n" + "\t\t\t\t\t\t\t\tZespół Autorski";
                 AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity.this);
                 dialogBuilder.setTitle(title);
                 dialogBuilder.setMessage(msg);
@@ -252,7 +275,7 @@ todo utworzyć case do menu - wybór tematu/działu
 
             } else if (firstRunMainActivity || !isRun) {
                 title = "Sekrety Bydgoskiej Historii";
-                msg = "Aplikacja ma za zadanie przybliżyć ważne wydarzenia z życia Bydgoszczy, które przez lata popadły w zapomnienie. Piękna historia miasta, nietuzinkowe postaci – przyjrzyj się uważnie tym unikalnym zdjęciom, obejrzyj filmy i wysłuchaj muzyki.\n\n" + "\t\t\t\t\t\t\t\tKrzysztof Drozdowski";
+                msg = "Aplikacja przybliży Ci ważne wydarzenia z życia Bydgoszczy, które przez lata popadły w zapomnienie. \n\n" + "\t\t\t\t\t\t\t\tZespół Autorski";
                 AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity.this);
                 dialogBuilder.setTitle(title);
                 dialogBuilder.setMessage(msg);
@@ -270,12 +293,45 @@ todo utworzyć case do menu - wybór tematu/działu
 
             AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity.this);
             dialogBuilder.setTitle("Czy wiesz, że..");
-            dialogBuilder.setMessage(showRandomDialogBySection(RETURN_TO_POLAND));
+            dialogBuilder.setMessage(showRandomDialogBySection(BYDGOSZCZ_1920));
             dialogBuilder.setIconAttribute(android.R.attr.alertDialogIcon);
             dialogBuilder.show();
         }
 
     }
+
+    private void createNotificationChannel() {
+        // Create the NotificationChannel, but only on API 26+ because
+        // the NotificationChannel class is new and not in the support library
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = getString(R.string.channel1_name);
+            String description = getString(R.string.channel1_description);
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel channel = new NotificationChannel("MY_CHANNEL", name, importance);
+            channel.setDescription(description);
+            // Register the channel with the system; you can't change the importance
+            // or other notification behaviors after this
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+
+            try {
+                notificationManager.createNotificationChannel(channel);
+            } catch (NullPointerException e) {
+// nothing todo
+            }
+        }
+    }
+
+    public void startNotification(String ciekawostka) {
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "MY_CHANNEL")
+                .setSmallIcon(R.drawable.ico_herb6)
+                .setContentTitle("Czy wiesz, że...")
+                .setContentText(ciekawostka)
+                .setStyle(new NotificationCompat.BigTextStyle().bigText(ciekawostka))
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
+        notificationManager.notify(notificationId, builder.build());
+    }
+
 
     public void onClickSmallFotografia1(View view) {
         isRun = true;

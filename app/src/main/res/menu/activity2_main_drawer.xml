@@ -5,16 +5,16 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/nav_home2"
             android:icon="@drawable/twotone_location_city_black_48"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_fotografie"
+            android:id="@+id/nav_fotografie2"
             android:icon="@drawable/twotone_monochrome_photos_black_48"
             android:title="@string/menu_gallery" />
 
         <item
-            android:id="@+id/nav_ciekawostki"
+            android:id="@+id/nav_ciekawostki2"
             android:icon="@drawable/twotone_apps_black_48"
             android:title="@string/menu_ciekawostki" />
 
@@ -23,11 +23,11 @@
     <item android:title="@string/przydatne_separator">
         <menu>
             <item
-                android:id="@+id/nav_autor"
+                android:id="@+id/nav_autor2"
                 android:icon="@drawable/twotone_text_rotation_none_black_48"
                 android:title="@string/menu_author" />
             <item
-                android:id="@+id/nav_muzea"
+                android:id="@+id/nav_muzea2"
                 android:icon="@drawable/twotone_museum_black_48"
                 android:title="@string/menu_muzea" />
         </menu>
