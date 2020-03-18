@@ -2,8 +2,7 @@
 package pl.ciecierski.sbh;
 
 import android.app.AlertDialog;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
+
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
@@ -22,8 +21,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
+
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -32,6 +30,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import pl.ciecierski.sbh.eternalservices.ProcessMainClass;
+import pl.ciecierski.sbh.eternalservices.restarter.RestartServiceBroadcastReceiver;
 import pl.ciecierski.sbh.ui.media.Film1Activity;
 import pl.ciecierski.sbh.ui.media.Film2Activity;
 import pl.ciecierski.sbh.ui.media.Film3Activity;
@@ -43,8 +43,6 @@ import pl.ciecierski.sbh.ui.media.Fotografia5Activity;
 import pl.ciecierski.sbh.ui.media.Fotografia6Activity;
 import pl.ciecierski.sbh.ui.media.Muzyka1Activity;
 
-import static pl.ciecierski.sbh.sections.RandomDialogBySections.showRandomDialogBySection;
-import static pl.ciecierski.sbh.sections.Sections.BYDGOSZCZ_1920;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -52,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     public final static String FRAI = "first_run_after_installation";
     public final static String FRMA = "first_run_mainactivity";
     public static boolean isRun;
-    private static final int notification1Id = 1964;
+//    private static final int notification1Id = 1964;
     private AppBarConfiguration mAppBarConfiguration;
     public static String txtBibl;
     public static String txtMO;
@@ -65,21 +63,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        createNotificationChannel1();
+
+
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-//        FloatingActionButton fab = findViewById(R.id.fab);
-////-----------
-////       todo toasty do modyfikacji
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                showVersionToast(view);
-//            }
-//        });
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -183,8 +174,7 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
         przy pierwszym użyciu aplikacji (po zainstalowaniu) wyświetla komunikat powitalny
          */
         new FirstWelcomeDialog().showFirstWelcomeDialog();
-//        losowe Notification z z Bydgoszcz1920
-        startNotification1(showRandomDialogBySection(BYDGOSZCZ_1920));
+
 
     }
 
@@ -206,18 +196,6 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-
-//        int id = item.getItemId();
-/*
-todo utworzyć case do menu - wybór tematu/działu
-1. 1920
-2. 1945
-3. ?
- */
-//        if (id == R.id.action_witaj) {
-////            new HistoricalDialog().showCzyWieszZe();
-//            return true;
-//        }
 
         int id = item.getItemId();
         switch (id) {
@@ -286,49 +264,19 @@ todo utworzyć case do menu - wybór tematu/działu
         }
     }
 
-//    private class HistoricalDialog {
-//        void showCzyWieszZe() {
-//
-//            AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity.this);
-//            dialogBuilder.setTitle("Czy wiesz, że..");
-//            dialogBuilder.setMessage(showRandomDialogBySection(BYDGOSZCZ_1945));
-//            dialogBuilder.setIconAttribute(android.R.attr.alertDialogIcon);
-//            dialogBuilder.show();
-//        }
-//
-//    }
 
-    private void createNotificationChannel1() {
-        // Create the NotificationChannel, but only on API 26+ because
-        // the NotificationChannel class is new and not in the support library
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            CharSequence name = getString(R.string.channel1_name);
-            String description = getString(R.string.channel1_description);
-            int importance = NotificationManager.IMPORTANCE_DEFAULT;
-            NotificationChannel channel = new NotificationChannel("MY_CHANNEL1", name, importance);
-            channel.setDescription(description);
-            // Register the channel with the system; you can't change the importance
-            // or other notification behaviors after this
-            NotificationManager notificationManager = getSystemService(NotificationManager.class);
 
-            try {
-                notificationManager.createNotificationChannel(channel);
-            } catch (NullPointerException e) {
-// nothing
-            }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+            RestartServiceBroadcastReceiver.scheduleJob(getApplicationContext());
+        } else {
+            ProcessMainClass bck = new ProcessMainClass();
+            bck.launchService(getApplicationContext());
         }
     }
 
-    public void startNotification1(String ciekawostka) {
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "MY_CHANNEL")
-                .setSmallIcon(R.drawable.ico_herb6)
-                .setContentTitle("Bydgoszcz 1920: czy wiesz, że...")
-                .setContentText(ciekawostka)
-                .setStyle(new NotificationCompat.BigTextStyle().bigText(ciekawostka))
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
-        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
-        notificationManager.notify(notification1Id, builder.build());
-    }
 
 
     public void onClickSmallFotografia1(View view) {

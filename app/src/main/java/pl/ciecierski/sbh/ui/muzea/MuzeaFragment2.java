@@ -35,29 +35,29 @@ private LocalizationsViewModel2 localizationsViewModel2;
         final TextView txtVDistanceToMWL = (TextView) root.findViewById(mwl_distance);
         final TextView txtVDistanceToMO = (TextView) root.findViewById(mo_distance);
         final TextView txtVDistanceToIPG = (TextView) root.findViewById(ipg_distance);
-
-        localizationsViewModel2.getTextBibl().observe(this, new Observer<String>() {
+//this<->getViewLifecycleOwner()
+        localizationsViewModel2.getTextBibl().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 txtVDistanceToBibl.setText(s);
             }
         });
 
-        localizationsViewModel2.getTextIPG().observe(this, new Observer<String>() {
+        localizationsViewModel2.getTextIPG().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 txtVDistanceToIPG.setText(s);
             }
         });
 
-        localizationsViewModel2.getTextMO().observe(this, new Observer<String>() {
+        localizationsViewModel2.getTextMO().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 txtVDistanceToMO.setText(s);
             }
         });
 
-        localizationsViewModel2.getTextMWL().observe(this, new Observer<String>() {
+        localizationsViewModel2.getTextMWL().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 txtVDistanceToMWL.setText(s);

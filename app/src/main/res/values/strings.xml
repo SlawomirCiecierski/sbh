@@ -1,14 +1,19 @@
 <resources>
+<!--    -->
+    <string name="current_version">Wersja aplikacji: <b>1.4.43</b></string>
+<!--    -->
     <string name="app_name">Sekrety bydgoskiej historii</string>
     <string name="nav_header_title">Sekrety bydgoskiej historii</string>
     <string name="nav_header_subtitle">100 lat Bydgoszczy w Polsce </string>
     <string name="nav_header2_subtitle">Wyzwolenie Bydgoszczy 1945 r. </string>
-<!--    Notification data-->
-    <string name="channel1_name">MY_CHANNEL1</string>
-    <string name="channel1_description">Sekrety Bydgoskiej Historii</string>
-    <string name="channel2_name">MY_CHANNEL2</string>
-    <string name="channel2_description">Sekrety Bydgoskiej Historii</string>
-<!--    -->
+    <!--    Notification data-->
+    <string name="channel_bydgoszcz1920_name">BYDGOSZCZ1920_CHANNEL</string>
+    <string name="channel_bydgoszcz1920_description">Sekrety Bydgoskiej Historii</string>
+    <string name="channel_bydgoszcz1945_name">BYDGOSZCZ1945_CHANNEL</string>
+    <string name="channel_bydgoszcz1945_description">Sekrety Bydgoskiej Historii</string>
+    <string name="channel_rejewski_name">BYDGOSZCZ1945_CHANNEL</string>
+    <string name="channel_rejewski_description">Sekrety Bydgoskiej Historii</string>
+    <!--    -->
     <string name="nav_header_desc">Herb Bydgoszczy</string>
     <string name="action_czy_wiesz_ze">Czy wiesz, że..</string>
     <string name="przydatne_separator">Przydatne</string>
@@ -53,7 +58,7 @@
     <string name="ciekawostka_23">W leżącym po wschodniej stronie miasta nieodległym Fordonie znajdowała się dodatkowo słaba, bo w sile niepełnego batalionu Szkoła Walki 2 Armii (Armeewaffenschule der 2. Armee) pod dowództwem gen. Rudolfa Noacka.</string>
     <string name="ciekawostka_24">Rankiem 23 stycznia Rosjanie zajęli Mroczę na północ od Nakła. Jak się okazało, był to sukces krótkotrwały gdyż miasto w trakcie dwugodzinnej walki zostało odbite przez 15 batalion fizylierów Waffen-SS oraz II batalion 34 Pułku Grenadierów Waffen-SS, wchodzącego w skład podążającej z Bytomia 15 Dywizji Grenadierów Waffen-SS. Straty Rosjan były znaczne. Odnotowano śmierć 30 oraz wzięcie do niewoli 120 żołnierzy przy swoich stratach w postaci zabitych i rannych 14 żołnierzy.</string>
     <string name="ciekawostka_25">Rotmistrz Hans Roggemann ze Szkoły Zwiadu i Kawalerii. Dowodził oddziałem broniącym dojścia do miasta.</string>
-
+<!---->
     <string name="mwl_title">Muzeum Wojsk Lądowych</string>
     <string name="mwl_ulica">\nul. Czerkaska 2</string>
     <string name="mwl_miasto">85–641 Bydgoszcz</string>
@@ -131,8 +136,5 @@ W składzie zgrupowania znajdowały się również:
         \n \n  Krzysztof Drozdowski</i></string>
     <string name="title_activity_film1">Film1Activity</string>
     <string name="title_activity_muzyka1">Muzyka1Activity</string>
-    <string name="current_version">Wersja aplikacji: <b>1.3.29</b></string>
-
-
-
+    <string name="title_activity_maps">Map</string>
 </resources>
