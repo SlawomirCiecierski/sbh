@@ -13,8 +13,8 @@ public class Film1Activity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //W drodze do wolności. Bydgoszcz w 1920 roku
-        setContentView(R.layout.activity_film_or_music);
-        WebView webView = findViewById(R.id.webview_film_or_music);
+        setContentView(R.layout.activity_film_or_music_or_web);
+        WebView webView = findViewById(R.id.webview_film_or_music_or_web);
         webView.loadUrl("https://youtu.be/HnIS2twdA_0");
     }
 

@@ -213,7 +213,10 @@ todo utworzyć case do menu - wybór tematu/działu
                 isRun = true;
                 startActivity(new Intent(this, MainActivity2.class));
                 return true;
-
+            case R.id.action_wybierz_rejewski:
+                isRun = true;
+                startActivity(new Intent(this, MainActivity3.class));
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }

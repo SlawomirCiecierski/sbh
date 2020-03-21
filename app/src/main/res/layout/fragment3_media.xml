@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tlo"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.media.MediaFragment3">
+    <!--1-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/herb"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
+
+
+
+        <!--fot1.click-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/description_photo_31"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_1"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:contentDescription="@string/photo_1"
+            android:onClick="onClickSmallFotografia31"
+            android:focusable="true"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/photo31small"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/description_photo_32"
+            android:textSize="16sp" />
+
+
+        <!--2        -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_2"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_2"
+            android:onClick="onClickSmallFotografia32"
+            android:scaleType="fitCenter"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/photo32small"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/description_photo_33"
+            android:textSize="16sp" />
+        <!--3-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_3"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_1"
+            android:onClick="onClickSmallFotografia33"
+            android:scaleType="fitCenter"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/photo33small"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/description_photo_34"
+            android:textSize="16sp" />
+        <!--4-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_4"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_4"
+            android:onClick="onClickSmallFotografia34"
+            android:scaleType="fitCenter"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/photo34small"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/description_photo_35"
+            android:textSize="16sp" />
+
+        <!--5-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_5"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_5"
+            android:onClick="onClickSmallFotografia35"
+            android:scaleType="fitCenter"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/photo35small"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/description_photo_36"
+            android:textSize="16sp" />
+
+        <!--6-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_6"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_6"
+            android:onClick="onClickSmallFotografia36"
+            android:scaleType="fitCenter"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/photo36small"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/description_photo_37"
+            android:textSize="16sp" />
+
+        <!--7-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_7"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_6"
+            android:onClick="onClickSmallFotografia37"
+            android:scaleType="fitCenter"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/photo37small"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal"
+            android:text="  "
+            android:textSize="24sp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal"
+            android:text="@string/film_1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/film1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="20dp"
+            android:background="@color/design_default_color_background"
+            android:onClick="onClickBtnFilm31"
+            android:text="@string/description_film31"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/film2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="20dp"
+            android:background="@color/design_default_color_background"
+            android:onClick="onClickBtnFilm32"
+            android:text="@string/description_film32"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/film3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="20dp"
+            android:background="@color/design_default_color_background"
+            android:onClick="onClickBtnFilm33"
+            android:text="@string/description_film33"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/film4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="20dp"
+            android:background="@color/design_default_color_background"
+            android:onClick="onClickBtnFilm34"
+            android:text="@string/description_film34"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/film5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="20dp"
+            android:background="@color/design_default_color_background"
+            android:onClick="onClickBtnFilm35"
+            android:text="@string/description_film35"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/film6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="20dp"
+            android:background="@color/design_default_color_background"
+            android:onClick="onClickBtnFilm36"
+            android:text="@string/description_film36"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal"
+            android:text="@string/muzyka_1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/muzyka1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="20dp"
+            android:background="@color/design_default_color_background"
+            android:onClick="onClickBtnMuzyka31"
+            android:text="@string/description_muzyka31"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal"
+            android:text="@string/web_1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/web1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="20dp"
+            android:background="@color/design_default_color_background"
+            android:onClick="onClickBtnWeb31"
+            android:text="@string/description_web31"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/web2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="20dp"
+            android:background="@color/design_default_color_background"
+            android:onClick="onClickBtnWeb32"
+            android:text="@string/description_web32"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_1"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ico_herb6"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

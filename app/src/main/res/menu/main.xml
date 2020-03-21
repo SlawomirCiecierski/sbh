@@ -20,6 +20,12 @@
                 android:title="Bydgoszcz 1945"
                 app:showAsAction="always" />
 
+            <item
+                android:id="@+id/action_wybierz_rejewski"
+                android:orderInCategory="100"
+                android:title="Marian Rejewski"
+                app:showAsAction="always" />
+
         </menu>
     </item>
 

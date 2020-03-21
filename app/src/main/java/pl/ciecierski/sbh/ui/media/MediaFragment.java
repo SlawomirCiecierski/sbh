@@ -12,15 +12,9 @@ import pl.ciecierski.sbh.R;
 
 public class MediaFragment extends Fragment {
 
-
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-
         return inflater.inflate(R.layout.fragment_media, container, false);
 
     }
-
-
-
 }

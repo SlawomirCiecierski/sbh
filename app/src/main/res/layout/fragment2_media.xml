@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/tlo"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".ui.media.MediaFragment">
+    tools:context=".ui.media.MediaFragment2">
     <!--1-->
 
     <LinearLayout

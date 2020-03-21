@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_home3">
+
+    <fragment
+        android:id="@+id/nav_home3"
+        android:name="pl.ciecierski.sbh.ui.home.HomeFragment3"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment3_home" />
+
+    <fragment
+        android:id="@+id/nav_fotografie3"
+        android:name="pl.ciecierski.sbh.ui.media.MediaFragment3"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment3_media" />
+
+
+    <fragment
+        android:id="@+id/nav_ciekawostki3"
+        android:name="pl.ciecierski.sbh.ui.ciekawostki.CiekawostkiFragment3"
+        android:label="@string/menu_ciekawostki"
+        tools:layout="@layout/fragment3_ciekawostki" />
+
+
+    <fragment
+        android:id="@+id/nav_autor3"
+        android:name="pl.ciecierski.sbh.ui.autor.AutorFragment3"
+        android:label="@string/menu_author"
+        tools:layout="@layout/fragment_autor" />
+
+    <fragment
+        android:id="@+id/nav_muzea3"
+        android:name="pl.ciecierski.sbh.ui.muzea.MuzeaFragment2"
+        android:label="@string/menu_muzea"
+        tools:layout="@layout/fragment_muzea" />
+</navigation>

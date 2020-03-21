@@ -16,8 +16,8 @@ public class Muzyka1Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_film_or_music);
-        WebView webView = findViewById(R.id.webview_film_or_music);
+        setContentView(R.layout.activity_film_or_music_or_web);
+        WebView webView = findViewById(R.id.webview_film_or_music_or_web);
         webView.loadUrl("https://soundcloud.com/ciecierski/sets/bydgoszcz100");
     }
 
