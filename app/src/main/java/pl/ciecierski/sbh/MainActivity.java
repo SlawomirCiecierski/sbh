@@ -42,7 +42,7 @@ import pl.ciecierski.sbh.ui.media.Fotografia4Activity;
 import pl.ciecierski.sbh.ui.media.Fotografia5Activity;
 import pl.ciecierski.sbh.ui.media.Fotografia6Activity;
 import pl.ciecierski.sbh.ui.media.Muzyka1Activity;
-
+import pl.ciecierski.sbh.ui.muzea.MapsActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -50,12 +50,15 @@ public class MainActivity extends AppCompatActivity {
     public final static String FRAI = "first_run_after_installation";
     public final static String FRMA = "first_run_mainactivity";
     public static boolean isRun;
-//    private static final int notification1Id = 1964;
+    //    private static final int notification1Id = 1964;
     private AppBarConfiguration mAppBarConfiguration;
     public static String txtBibl;
     public static String txtMO;
     public static String txtIPG;
     public static String txtMWL;
+    public static String mapsTitle;
+    public static double lat;
+    public static double lng;
 
     //LOKALIZACJA
     private FusedLocationProviderClient client;
@@ -269,18 +272,16 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
     }
 
 
-
     @Override
     protected void onResume() {
         super.onResume();
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             RestartServiceBroadcastReceiver.scheduleJob(getApplicationContext());
         } else {
             ProcessMainClass bck = new ProcessMainClass();
             bck.launchService(getApplicationContext());
         }
     }
-
 
 
     public void onClickSmallFotografia1(View view) {
@@ -333,5 +334,37 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
         startActivity(new Intent(this, Muzyka1Activity.class));
     }
 
+
+    public void onClickBtnMapsMWL(View view) {
+        isRun = true;
+        lat = 53.142302;
+        lng = 18.020765;
+        mapsTitle = "Muzeum Wojsk Lądowych";
+        startActivity(new Intent(this, MapsActivity.class));
+    }
+
+    public void onClickBtnMapsMO(View view) {
+        isRun = true;
+        lat = 53.122532;
+        lng = 17.997541;
+        mapsTitle = "Muzeum Okręgowe w Bydgoszczy";
+        startActivity(new Intent(this, MapsActivity.class));
+    }
+
+    public void onClickBtnMapsIPG(View view) {
+        isRun = true;
+        lat = 53.128717;
+        lng = 18.008444;
+        mapsTitle = "Izba Pamięci Adama Grzymały Siedleckiego";
+        startActivity(new Intent(this, MapsActivity.class));
+    }
+
+    public void onClickBtnMapsBibl(View view) {
+        isRun = true;
+        lat = 53.120912;
+        lng = 18.000407;
+        mapsTitle = "Wojewódzka i Miejska Biblioteka";
+        startActivity(new Intent(this, MapsActivity.class));
+    }
 
 }

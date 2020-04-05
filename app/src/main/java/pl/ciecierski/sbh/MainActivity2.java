@@ -37,6 +37,7 @@ import pl.ciecierski.sbh.ui.media.Fotografia24Activity2;
 import pl.ciecierski.sbh.ui.media.Fotografia25Activity2;
 import pl.ciecierski.sbh.ui.media.Fotografia26Activity2;
 import pl.ciecierski.sbh.ui.media.Muzyka1Activity2;
+import pl.ciecierski.sbh.ui.muzea.MapsActivity;
 
 
 public class MainActivity2 extends AppCompatActivity {
@@ -314,5 +315,37 @@ todo utworzyć case do menu - wybór tematu/działu
         startActivity(new Intent(this, Muzyka1Activity2.class));
     }
 
+
+    public void onClickBtnMapsMWL(View view){
+        isRun=true;
+        MainActivity.lat = 53.142302;
+        MainActivity.lng = 18.020765;
+        MainActivity.mapsTitle="Muzeum Wojsk Lądowych";
+        startActivity(new Intent(this, MapsActivity.class));
+    }
+
+    public void onClickBtnMapsMO(View view){
+        isRun=true;
+        MainActivity.lat=53.122532;
+        MainActivity.lng=17.997541;
+        MainActivity.mapsTitle="Muzeum Okręgowe w Bydgoszczy";
+        startActivity(new Intent(this, MapsActivity.class));
+    }
+
+    public void onClickBtnMapsIPG(View view){
+        isRun=true;
+        MainActivity.lat=53.128717;
+        MainActivity.lng=18.008444;
+        MainActivity.mapsTitle="Izba Pamięci Adama Grzymały Siedleckiego";
+        startActivity(new Intent(this, MapsActivity.class));
+    }
+
+    public void onClickBtnMapsBibl(View view){
+        isRun=true;
+        MainActivity.lat=53.120912;
+        MainActivity.lng=18.000407;
+        MainActivity.mapsTitle="Wojewódzka i Miejska Biblioteka";
+        startActivity(new Intent(this, MapsActivity.class));
+    }
 
 }

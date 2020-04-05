@@ -10,6 +10,11 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_LAUNCH_BROADCASTS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- required by Android 9 -->
@@ -23,6 +28,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+<!--        <meta-data-->
+<!--            android:name="com.google.android.geo.API_KEY"-->
+<!--            android:value="@string/google_maps_key" />-->
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -32,8 +41,12 @@
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
 <!--        <meta-data-->
-<!--            android:name="com.google.android.geo.API_KEY"-->
-<!--            android:value="@string/google_maps_key" />-->
+<!--            android:name="com.google.android.gms.version"-->
+<!--            android:value="@integer/google_play_services_version" />-->
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBJ7kumEbwA_htQxEPBmTzO6TtorDMAD8U" />
 
 <!--        <activity-->
 <!--            android:name=".maps.MapsActivity"-->
@@ -85,6 +98,13 @@
         </activity>
         <activity
             android:name=".MainActivity3"
+            android:screenOrientation="sensor">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.muzea.MapsActivity"
             android:screenOrientation="sensor">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

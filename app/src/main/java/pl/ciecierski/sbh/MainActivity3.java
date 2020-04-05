@@ -24,20 +24,16 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
 
-import pl.ciecierski.sbh.ui.media.Film1Activity2;
+
 import pl.ciecierski.sbh.ui.media.Film1Activity3;
-import pl.ciecierski.sbh.ui.media.Film2Activity2;
+
 import pl.ciecierski.sbh.ui.media.Film2Activity3;
-import pl.ciecierski.sbh.ui.media.Film3Activity2;
+
 import pl.ciecierski.sbh.ui.media.Film3Activity3;
 import pl.ciecierski.sbh.ui.media.Film4Activity3;
 import pl.ciecierski.sbh.ui.media.Film5Activity3;
 import pl.ciecierski.sbh.ui.media.Film6Activity3;
-import pl.ciecierski.sbh.ui.media.Fotografia22Activity2;
-import pl.ciecierski.sbh.ui.media.Fotografia23Activity2;
-import pl.ciecierski.sbh.ui.media.Fotografia24Activity2;
-import pl.ciecierski.sbh.ui.media.Fotografia25Activity2;
-import pl.ciecierski.sbh.ui.media.Fotografia26Activity2;
+
 import pl.ciecierski.sbh.ui.media.Fotografia31Activity3;
 import pl.ciecierski.sbh.ui.media.Fotografia32Activity3;
 import pl.ciecierski.sbh.ui.media.Fotografia33Activity3;
@@ -45,10 +41,11 @@ import pl.ciecierski.sbh.ui.media.Fotografia34Activity3;
 import pl.ciecierski.sbh.ui.media.Fotografia35Activity3;
 import pl.ciecierski.sbh.ui.media.Fotografia36Activity3;
 import pl.ciecierski.sbh.ui.media.Fotografia37Activity3;
-import pl.ciecierski.sbh.ui.media.Muzyka1Activity2;
+
 import pl.ciecierski.sbh.ui.media.Muzyka1Activity3;
 import pl.ciecierski.sbh.ui.media.Web1Activity3;
 import pl.ciecierski.sbh.ui.media.Web2Activity3;
+import pl.ciecierski.sbh.ui.muzea.MapsActivity;
 
 
 public class MainActivity3 extends AppCompatActivity {
@@ -359,6 +356,37 @@ todo utworzyć case do menu - wybór tematu/działu
     public void onClickBtnWeb32(View view) {
         isRun = true;
         startActivity(new Intent(this, Web2Activity3.class));
+    }
+    public void onClickBtnMapsMWL(View view){
+        isRun=true;
+        MainActivity.lat = 53.142302;
+        MainActivity.lng = 18.020765;
+        MainActivity.mapsTitle="Muzeum Wojsk Lądowych";
+        startActivity(new Intent(this, MapsActivity.class));
+    }
+
+    public void onClickBtnMapsMO(View view){
+        isRun=true;
+        MainActivity.lat=53.122532;
+        MainActivity.lng=17.997541;
+        MainActivity.mapsTitle="Muzeum Okręgowe w Bydgoszczy";
+        startActivity(new Intent(this, MapsActivity.class));
+    }
+
+    public void onClickBtnMapsIPG(View view){
+        isRun=true;
+        MainActivity.lat=53.128717;
+        MainActivity.lng=18.008444;
+        MainActivity.mapsTitle="Izba Pamięci Adama Grzymały Siedleckiego";
+        startActivity(new Intent(this, MapsActivity.class));
+    }
+
+    public void onClickBtnMapsBibl(View view){
+        isRun=true;
+        MainActivity.lat=53.120912;
+        MainActivity.lng=18.000407;
+        MainActivity.mapsTitle="Wojewódzka i Miejska Biblioteka";
+        startActivity(new Intent(this, MapsActivity.class));
     }
 
 }

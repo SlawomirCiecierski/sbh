@@ -39,6 +39,7 @@
             android:text="@string/distance"
             android:textSize="16sp" />
 
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,6 +57,16 @@
             android:layout_height="wrap_content"
             android:text="@string/mwl_tel"
             android:textSize="16sp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:textColor="@color/colorAccent"
+            android:background="@color/design_default_color_background"
+            android:layout_margin="20dp"
+            android:text="Mapa"
+            android:onClick="onClickBtnMapsMWL"
+            android:id="@+id/mapsMWL"/>
 
 
         <!--        2-->
@@ -101,6 +112,17 @@
             android:layout_height="wrap_content"
             android:text="@string/mo_tel"
             android:textSize="16sp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:textColor="@color/colorAccent"
+            android:background="@color/design_default_color_background"
+            android:layout_margin="20dp"
+            android:text="Mapa"
+            android:onClick="onClickBtnMapsMO"
+            android:id="@+id/mapsMO"/>
+
 
         <!--        3-->
         <ImageView
@@ -146,6 +168,16 @@
             android:layout_height="wrap_content"
             android:text="@string/ipg_tel"
             android:textSize="16sp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:textColor="@color/colorAccent"
+            android:background="@color/design_default_color_background"
+            android:layout_margin="20dp"
+            android:text="Mapa"
+            android:onClick="onClickBtnMapsIPG"
+            android:id="@+id/mapsIPG"/>
 
         <!--        4-->
         <ImageView
@@ -189,6 +221,16 @@
             android:layout_height="wrap_content"
             android:text="@string/bibl_tel"
             android:textSize="16sp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:textColor="@color/colorAccent"
+            android:background="@color/design_default_color_background"
+            android:layout_margin="20dp"
+            android:text="Mapa"
+            android:onClick="onClickBtnMapsBibl"
+            android:id="@+id/mapsBibl"/>
 
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
