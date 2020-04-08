@@ -253,8 +253,8 @@ public class Service extends android.app.Service {
         // Create the NotificationChannel, but only on API 26+ because
         // the NotificationChannel class is new and not in the support library
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            name = getString(R.string.channel_rejewski_name);
-            description = getString(R.string.channel_rejewski_description);
+//            name = getString(R.string.channel_rejewski_name);
+//            description = getString(R.string.channel_rejewski_description);
             int importance = NotificationManager.IMPORTANCE_DEFAULT;
             NotificationChannel channel = new NotificationChannel(idChannel, name, importance);
             channel.setDescription(description);
