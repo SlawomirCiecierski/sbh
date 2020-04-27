@@ -37,6 +37,8 @@ import pl.ciecierski.sbh.ui.media.Fotografia24Activity2;
 import pl.ciecierski.sbh.ui.media.Fotografia25Activity2;
 import pl.ciecierski.sbh.ui.media.Fotografia26Activity2;
 import pl.ciecierski.sbh.ui.media.Muzyka1Activity2;
+import pl.ciecierski.sbh.ui.media.Www1GithubActivity;
+import pl.ciecierski.sbh.ui.media.Www2GithubActivity;
 import pl.ciecierski.sbh.ui.muzea.MapsActivity;
 
 
@@ -315,6 +317,13 @@ todo utworzyć case do menu - wybór tematu/działu
         startActivity(new Intent(this, Muzyka1Activity2.class));
     }
 
+    /*
+link do githuba w treści autora
+ */
+    public void onClickWeb2GitHub(View view){
+        isRun = true;
+        startActivity(new Intent(this, Www2GithubActivity.class));
+    }
 
     public void onClickBtnMapsMWL(View view){
         isRun=true;

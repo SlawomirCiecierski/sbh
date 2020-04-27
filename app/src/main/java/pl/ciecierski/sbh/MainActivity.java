@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.Menu;
 
 import android.location.Location;
+import android.widget.TextView;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -42,6 +43,7 @@ import pl.ciecierski.sbh.ui.media.Fotografia4Activity;
 import pl.ciecierski.sbh.ui.media.Fotografia5Activity;
 import pl.ciecierski.sbh.ui.media.Fotografia6Activity;
 import pl.ciecierski.sbh.ui.media.Muzyka1Activity;
+import pl.ciecierski.sbh.ui.media.Www1GithubActivity;
 import pl.ciecierski.sbh.ui.muzea.MapsActivity;
 
 
@@ -93,10 +95,13 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
+
+
+
+
         /*
         LOKALIZACJA
          */
-
         final Location locationBibl = new Location("Bibl"); //lokalizacja Biblioteki
         locationBibl.setLongitude(18.000407);
         locationBibl.setLatitude(53.120912);
@@ -334,6 +339,13 @@ todo w zalezności od wybranego działu skontruować menu z różnymi fragmentam
         startActivity(new Intent(this, Muzyka1Activity.class));
     }
 
+    /*
+link do githuba w treści autora
+ */
+    public void onClickWeb1GitHub(View view){
+        isRun = true;
+        startActivity(new Intent(this, Www1GithubActivity.class));
+    }
 
     public void onClickBtnMapsMWL(View view) {
         isRun = true;

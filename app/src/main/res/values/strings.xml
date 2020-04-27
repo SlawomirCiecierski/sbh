@@ -1,7 +1,7 @@
 <resources>
-<!--    -->
+    <!--    -->
     <string name="current_version">Wersja aplikacji: <b>1.4.49</b></string>
-<!--    -->
+    <!--    -->
     <string name="app_name">Sekrety bydgoskiej historii</string>
     <string name="nav_header_title">Sekrety bydgoskiej historii</string>
     <string name="nav_header_subtitle">100 lat Bydgoszczy w Polsce </string>
@@ -12,7 +12,7 @@
     <string name="channel_bydgoszcz1920_description">Sekrety Bydgoskiej Historii</string>
     <string name="channel_bydgoszcz1945_name">BYDGOSZCZ1945_CHANNEL</string>
     <string name="channel_bydgoszcz1945_description">Sekrety Bydgoskiej Historii</string>
-    <string name="channel_rejewski_name">BYDGOSZCZ1945_CHANNEL</string>
+    <string name="channel_rejewski_name">REJEWSKI_CHANNEL</string>
     <string name="channel_rejewski_description">Sekrety Bydgoskiej Historii</string>
     <!--    -->
     <string name="nav_header_desc">Herb Bydgoszczy</string>
@@ -88,7 +88,7 @@
     <string name="bibl_tel"> tel. 523 399 250</string>
     <string name="version">Sekrety Bydgoskiej Historii wersja 1.0.5</string>
     <string name="distance">-</string>
-    <string name="description_developer_android">\n<b>Sławomir Ciecierski</b> - kierownik projektu, programista Java, kompozytor. Wersja aplikacji na Android.\n\n </string>
+    <string name="description_developer_android">\n<b>Sławomir Ciecierski</b> - kierownik projektu, programista Java, kompozytor. Wersja aplikacji na Android. <u>Kod źródłowy aplikacji - link: github.com</u>\n\n </string>
     <string name="description_developer_ios">\n<b>Mateusz Szafraniec</b> - programista aplikacji mobilnych. Wersja aplikacji na iOS.\n\n
     \nZespół testerów w składzie:\n</string>
     <string name="description_tester1">\n1. <b>Konrad Stankiewicz;\n</b></string>
@@ -143,7 +143,7 @@ W składzie zgrupowania znajdowały się również:
     <string name="description_photo_36">Po II Wojnie Światowej do kraju powrócił 21 listopada 1946r. na pokładzie jednego ze statków pasażerskich. Wysiadł w porcie w Gdyni i pociągiem udał się do Bydgoszczy, gdzie przebywała jego żona z dziećmi. Mieszkała tam u swoich rodziców, w kamienicy przy ul. Dworcowej 10. Wojnę spędziła w stolicy, z której została jednak wysiedlona po upadku powstania warszawskiego. </string>
     <string name="description_photo_37">Niektóre dokumenty sugerują, że Rejewski zamierzał powrócić do opanowanej przez komunistów Polski tylko na chwilę, aby wywieźć z niej rodzinę. W ankiecie personalnej z 6 września 1946r. napisał, że chciałby osiedlić się z rodziną we Francji i zajmować się tam matematyką ubezpieczeniową. Plany te okazały się nierealne. Komuniści nie zezwalali na wyjazd z kraju osób związanych z przedwojennymi władzami, walczących w czasie wojny na Zachodzie. Nielegalne przekroczenie granicy byłoby niebezpieczne, a w towarzystwie żony i małych dzieci wręcz niewykonalne. Rejewski – mający wówczas 41 lat – musiał zaczynać wszystko od nowa. Rodzinę udało się dość szybko poskładać. W dalszej kolejności czekało uporządkowanie spraw zawodowych. Próbował zatrudnić się na Uniwersytecie Poznańskim lub Politechnice Szczecińskiej, jednak – mimo wstawiennictwa prof. Krygowskiego – bezskutecznie. Na przeszkodzie stanął brak stopnia naukowego oraz własnego mieszkania. Zmuszony został do poszukiwania pracy w Bydgoszczy. Od 1 lutego 1947r. zatrudniono go na stanowisku kierownika sekcji fakturowej w fabryce Kabel Polski (po upaństwowieniu w grudniu 1948r. zmieniła ona nazwę na Pomorskie Zakłady Wytwórcze Materiałów Elektrotechnicznych w Bydgoszczy). Życie zaczęło się pomału stabilizować, gdy nagle małżeństwo Rejewskich doświadczyło tragedii. 9 lipca 1947r. w wyniku powikłań związanych z chorobą Heinego­Medina zmarł ich jedenastoletni syn Andrzej. 28 stycznia 1950r. Rejewski został zwolniony z pracy. Był to skutek prowadzonej przez Urząd Bezpieczeństwa Publicznego inwigilacji pracowników bydgoskich zakładów przemysłowych, którzy przed wojną związani byli z wojskiem lub „dwójką”. Sprawę tę oznaczono kryptonimem „Sztab”. Oskarżano ich o kontakty z obcymi służbami, dywersję ideologiczną, propagowanie wrogich wobec władz komunistycznych poglądów, a nawet sabotaż gospodarczy. Nie mając dostatecznych dowodów na popełnienie zarzucanych im czynów, zmuszono ich do zmiany miejsc pracy. Ze znalezieniem zatrudnienia Rejewski nie miał problemu, ponieważ oceniany był jako bardzo dobry fachowiec, sumiennie wykonujący obowiązki. Pracował jako urzędnik, pełniąc również funkcje kierownicze, w Związku Mierniczych w Bydgoszczy (1950–1951), Związku Branżowym Spółdzielni Drzewnych i Wytwórczości Różnej (1951–1954) oraz Wojewódzkim Związku Spółdzielni Pracy (1954–1967). Karierę zawodową zakończył w lutym 1967r., gdy przeszedł na rentę, a potem 16 sierpnia 1970r. na emeryturę.
   </string>
-<!---->
+    <!---->
     <string name="description_film1">Bydgoszcz w 1920 roku</string>
     <string name="description_film2">Wkroczenie Wojska Polskiego - rekonstrukcja</string>
     <string name="description_film3">Makieta Starego Rynku w 1920 roku</string>
@@ -161,7 +161,7 @@ W składzie zgrupowania znajdowały się również:
     <string name="description_muzyka31">Enigma</string>
     <string name="description_web31">Marian rejewski uhonorowany w Krakowie</string>
     <string name="description_web32">Audycje Polskiego Radia</string>
-<!--    -->
+    <!--    -->
     <string name="text_home">\n<i>Aplikacja ma za zadanie przybliżyć różne ważne wydarzenia z życia Bydgoszczy, które przez lata popadły w zapomnienie. Piękna historia miasta, nietuzinkowe postaci – przyjrzyj się uważnie tym unikalnym zdjęciom, obejrzyj filmy i posłuchaj muzyki. To wszystko znajdziesz w aplikacji pod nazwą <b>Sekrety Bydgoskiej Historii</b>. Projekt będzie rozwijał się o kolejne sekrety, więc wróć tu koniecznie.
         \n \n  Krzysztof Drozdowski</i></string>
     <string name="title_activity_film1">Film1Activity</string>
