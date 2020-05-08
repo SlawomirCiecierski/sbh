@@ -348,6 +348,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ui.media.Web3Activity3"
+            android:screenOrientation="sensor">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ui.media.Www1GithubActivity"
             android:screenOrientation="sensor">
             <intent-filter>
