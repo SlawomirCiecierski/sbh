@@ -169,7 +169,8 @@ public class Service extends android.app.Service {
                 if (
                         (counter == 40) |
                                 (counter == 800) |
-                                (counter % 3600 == 0)) {
+                                (counter % 3600 == 0) |
+                                (counter % 33600 == 0)) {
 
 //                    Log.i("do 1920: ", showRandomDialogBySection(BYDGOSZCZ_1920));
 
@@ -177,7 +178,7 @@ public class Service extends android.app.Service {
                             getString(R.string.channel_bydgoszcz1920_description),
                             "BYDGOSZCZ1920_CHANNEL");
 
-                                    Log.i("in timer ciecierski", "in timer ++++  " + (counter));
+                    Log.i("in timer ciecierski", "in timer ++++  " + (counter));
 
                     startNotification(showRandomDialogBySection(BYDGOSZCZ_1920),
                             "BYDGOSZCZ1920_CHANNEL",
@@ -188,7 +189,8 @@ public class Service extends android.app.Service {
                 if (
                         (counter == 20) |
                                 (counter == 700) |
-                                (counter % 7200 == 0)) {
+                                (counter % 7200 == 0) |
+                                (counter % 17200 == 0)) {
 
 //                    Log.i("do 1945: ", showRandomDialogBySection(BYDGOSZCZ_1945));
 
@@ -207,7 +209,8 @@ public class Service extends android.app.Service {
                 if (
                         (counter == 60) |
                                 (counter == 900) |
-                                (counter % 10800 == 0)) {
+                                (counter % 10800 == 0) |
+                                (counter % 20800 == 0)) {
 
 //                    Log.i("do Rejewski: ", showRandomDialogBySection(MARIAN_REJEWSKI));
 
@@ -244,7 +247,6 @@ public class Service extends android.app.Service {
     public static void setmCurrentService(Service mCurrentService) {
         Service.mCurrentService = mCurrentService;
     }
-
 
 
     private void createNotificationChannel(CharSequence name,
